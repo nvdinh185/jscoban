@@ -1,15 +1,15 @@
-var input = alert("Hello World!");
+var a = alert("Hello World!");
 
-console.log(input); // underfined
+console.log(a); // underfined
 
-var input = confirm("Xác nhận!");
+var b = confirm("Xác nhận!");
 
-console.log(input); // true/false
+console.log(b); // true/false
 
-var chieuDai = prompt("Nhập chiều dài: ");
+var c = prompt("Nhập 1 số: ");
 
-console.log(chieuDai);
-console.log(typeof chieuDai);
+console.log(c);
+console.log(typeof c);
 
 setTimeout(function () {
     alert("123");
