@@ -19,4 +19,4 @@ console.log(++number2); // 3
 console.log(number2); // 3
 
 // Toán tử -- tương tự các bạn nhé, điểm khác
-// là thay vì cộng 1 trừ toán tử -- sẽ trừ 1
+// là thay vì cộng 1 thì toán tử -- sẽ trừ 1
