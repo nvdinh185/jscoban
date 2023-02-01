@@ -58,7 +58,7 @@ function count(number, array) {
 // Hàm đếm số nguyên tố trong mảng
 function countSNT(array) {
     var count = 0;
-    for (let n of array) {
+    for (var n of array) {
         if (soNguyenTo(n)) count++;
     }
     return count;
@@ -67,7 +67,7 @@ function countSNT(array) {
 // Hàm đếm số hoàn hảo trong mảng
 function countSHH(array) {
     var count = 0;
-    for (let n of array) {
+    for (var n of array) {
         if (soHoanHao(n)) count++;
     }
     return count;
@@ -76,7 +76,7 @@ function countSHH(array) {
 // Hàm đếm số fibonacci trong mảng
 function countSFb(array) {
     var count = 0;
-    for (let n of array) {
+    for (var n of array) {
         if (soFibonacci(n)) count++;
     }
     return count;
@@ -85,7 +85,7 @@ function countSFb(array) {
 // Hàm đếm số đối xứng trong mảng
 function countSDX(array) {
     var count = 0;
-    for (let n of array) {
+    for (var n of array) {
         if (soDoiXung(n)) count++;
     }
     return count;

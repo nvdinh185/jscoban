@@ -15,12 +15,12 @@ function inputNumber(msg) {
 function giaiPTB1(a, b) {
     if (!check) {
         alert("Lỗi khi nhập!");
-    } else if (a == 0 && b == 0) {
+    } else if (a === 0 && b === 0) {
         console.log("Phương trình vô số nghiệm!");
-    } else if (a == 0 && b != 0) {
+    } else if (a === 0 && b !== 0) {
         console.log("Phương trình vô nghiệm!");
     } else {
-        console.log("Phuong trinh co nghiem: " + (-b / a));
+        console.log("Phuong trinh co nghiem x = " + (-b / a));
     }
 }
 

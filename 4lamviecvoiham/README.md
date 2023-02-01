@@ -15,8 +15,10 @@
 - Khi chọn 3: Thoát khỏi chương trình và in ra dòng chữ "Good Bye!"
 
 ## Bài 4: Viết chương trình sử dụng hàm truyền vào một dãy số sau đó:
-1. Tính tổng của dãy số
-2. Tìm số lớn nhất
+1. in dãy số đã nhập
+2. Tính tổng của dãy số
+3. Tìm số lớn nhất
+4. Tìm số nhỏ nhất
 - Sử dụng đối tượng arguments
 
 ## Bài 5: Viết chương trình có sử dụng hàm để hoán đổi giá trị 2 biến

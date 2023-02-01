@@ -1,4 +1,6 @@
-## Bài tập 3: Cho mảng sinh viên gồm các thông tin như sau:
+# BÀI TẬP ĐỂ ÁP DỤNG HÀM, VÒNG LẶP ĐỐI VỚI MẢNG
+
+## Bài tập 1: Cho mảng sinh viên gồm các thông tin như sau:
 
 ```js
 const students = [
@@ -53,9 +55,8 @@ Tạo menu chương trình như sau:
 - Khi chọn 3: Sửa 1 sinh viên trong danh sách theo id nhập vào.
 - Khi chọn 4: Xóa 1 sinh viên trong danh sách theo id nhập vào.
 
-# BÀI TẬP ĐỂ ÁP DỤNG CÁC HÀM, VÒNG LẶP ĐỐI VỚI MẢNG
 
-## Bài tập 4: Viết chương trình mô phỏng từ điển Anh Việt
+## Bài tập 2: Viết chương trình mô phỏng từ điển Anh Việt
 
 Tạo menu chương trình như sau:
 --------------------------------------
@@ -70,7 +71,7 @@ Tạo menu chương trình như sau:
 - Khi chọn 3: Nhập vào một từ tiếng Anh bất kỳ, tìm kiếm trong từ điển, nếu có thì in nghĩa tiếng Việt của từ đó. Nếu không có thì in ra không tìm thấy.
 - Khi chọn 4: Thoát khỏi chương trình và in ra dòng chữ "Cảm ơn đã sử dụng từ điển!"
 
-## Bài tập 5: Cho danh sách các đội bóng tham dự World Cup như sau:
+## Bài tập 3: Cho danh sách các đội bóng tham dự World Cup như sau:
 
 ```js
 const danhSachDoiBong = [
@@ -110,7 +111,7 @@ Tạo menu như sau:
 - Khi chọn 4: Nhập vào id và xóa thông tin đội bóng có id đó. Nếu không có thì thông báo "Không tìm thấy đội bóng nào để xóa".
 - Khi chọn 0: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
 
-## Bài tập 6: Cho danh sách các quân bài như sau:
+## Bài tập 4: Cho danh sách các quân bài như sau:
 
 ```js
 const danhSachQuanBai = [
@@ -152,7 +153,7 @@ Tạo menu như sau:
 - Khi chọn 5: Hiển thị danh sách các quân bài
 - Khi chọn 0: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
 
-## Bài tập 7: Cho mảng sinh viên gồm các thông tin như sau:
+## Bài tập 5: Cho mảng sinh viên gồm các thông tin như sau:
 
 
 ```js

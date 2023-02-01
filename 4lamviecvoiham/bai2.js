@@ -15,28 +15,25 @@ function inputNumber(msg) {
 function giaiPTB1(a, b) {
     if (!check) {
         alert("Lỗi khi nhập!");
-    } else if (a == 0 && b == 0) {
+    } else if (a === 0 && b === 0) {
         console.log("Phương trình vô số nghiệm!");
-    } else if (a == 0 && b != 0) {
+    } else if (a === 0 && b !== 0) {
         console.log("Phương trình vô nghiệm!");
     } else {
-        console.log("Phuong trinh co nghiem: " + (-b / a));
+        console.log("Phuong trinh co nghiem x = " + (-b / a));
     }
 }
 
-function giaiPTB2() {
-    var a = inputNumber("Nhập hệ số a: ");
-    var b = inputNumber("Nhập hệ số b: ");
-    var c = inputNumber("Nhập hệ số c: ");
+function giaiPTB2(a, b, c) {
     if (!check) {
         alert("Lỗi khi nhập!");
-    } else if (a == 0) {
+    } else if (a === 0) {
         giaiPTB1(b, c);
     } else {
         var delta = Math.pow(b, 2) - (4 * a * c);
         if (delta < 0) {
             console.log("Phương trình vô nghiệm");
-        } else if (delta == 0) {
+        } else if (delta === 0) {
             console.log("Phương trình có nghiệm kép x1 = x2 = " + (-b / (2 * a)));
         } else {
             var x1 = (-b - Math.sqrt(delta)) / (2 * a);
@@ -45,5 +42,8 @@ function giaiPTB2() {
         }
     }
 }
+var a = inputNumber("Nhập hệ số a: ");
+var b = inputNumber("Nhập hệ số b: ");
+var c = inputNumber("Nhập hệ số c: ");
 
-giaiPTB2();
+giaiPTB2(a, b, c);

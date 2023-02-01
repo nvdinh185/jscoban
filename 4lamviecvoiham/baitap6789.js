@@ -41,8 +41,8 @@ function soDoiXung(n) {
     return false;
 }
 
-// console.log(soNguyenTo(13));
-// console.log(soHoanHao(28));
-// console.log(soFibonacci(21));
+console.log(soNguyenTo(13));
+console.log(soHoanHao(28));
+console.log(soFibonacci(21));
 
 console.log(soDoiXung(234565432));

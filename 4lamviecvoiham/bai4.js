@@ -1,9 +1,11 @@
+// Hàm in dãy số đã nhập
 function writeLog() {
     for (var i = 0; i < arguments.length; i++) {
         console.log(arguments[i]);
     }
 }
 
+// Hàm tính tổng của dãy số
 function sumArray() {
     var sum = 0;
     for (var i = 0; i < arguments.length; i++) {
@@ -12,6 +14,7 @@ function sumArray() {
     return sum;
 }
 
+// Hàm tìm số lớn nhất
 function findMax() {
     var max = -Infinity;
     for (var i = 0; i < arguments.length; i++) {
@@ -22,6 +25,7 @@ function findMax() {
     return max;
 }
 
+// Hàm tìm số nhỏ nhất
 function findMin() {
     var min = arguments[0];
     for (var i = 1; i < arguments.length; i++) {
