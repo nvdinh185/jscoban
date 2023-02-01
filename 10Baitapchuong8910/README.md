@@ -216,7 +216,7 @@ const students = [
 
 2. Kiểm tra xem có sinh viên nào xếp loại giỏi không? (có các môn đều 8 điểm trở lên)
 
-3. Lọc ra các sinh viên xếp loại giỏi và in ra thông tin gồm Tên, Toán, Lý, Hóa
+3. Lọc ra các sinh viên xếp loại giỏi và in ra
 
 4. Tìm 1 sinh viên xếp loại giỏi
 
@@ -224,8 +224,8 @@ const students = [
 
 6. Thêm thuộc tính tổng điểm 3 môn
 
-7. Tính tổng điểm toán của các sinh viên
+7. Tính tổng điểm của các sinh viên
 
-8. Tính điểm toán trung bình của các sinh viên (làm tròn 2 chữ số thập phân)
+8. Tính điểm trung bình của các sinh viên (làm tròn 2 chữ số thập phân)
 
 9. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần

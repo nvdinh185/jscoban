@@ -104,33 +104,29 @@ const students = [
 ```
 
 Tạo menu như sau:
----------------------------------------
-0. Làm sạch giao diện console
-1. Nhập dữ liệu
-2. Xuất dữ liệu
-3. Tìm sinh viên
-4. Lọc ra các sinh viên xếp loại giỏi
+=== QUẢN LÝ SINH VIÊN ===
+1. kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không?
+2. kiểm tra xem có sinh viên nào xếp loại giỏi không?
+3. Lọc ra các sinh viên xếp loại giỏi
+4. Tìm 1 sinh viên xếp loại giỏi
 5. Cộng cho mỗi sinh viên 1 điểm toán
 6. Thêm thuộc tính tổng điểm 3 môn
 7. Tính tổng điểm của các sinh viên
-8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
-9. Tính điểm trung bình của các sinh viên
-10. Xóa sinh viên
-11. Thoát
+8. Tính điểm trung bình của các sinh viên
+9. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+10. Thoát
 ---------------------------------------
 
-- Khi chọn 0: Làm sạch giao diện console
-- Khi chọn 1: Nhập 1 sinh viên và thêm vào danh sách
-- Khi chọn 2: Hiển thị danh sách sinh viên hiện có
-- Khi chọn 3: Tìm sinh viên theo id và hiển thị , nếu không tìm thấy thì hiển thị "Không tìm thấy!"
-- Khi chọn 4: Lọc ra các sinh viên xếp loại giỏi và hiển thị
+- Khi chọn 1: Duyệt mảng và kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không?
+- Khi chọn 2: Duyệt mảng và kiểm tra xem có sinh viên nào xếp loại giỏi không?
+- Khi chọn 3: Lọc ra các sinh viên xếp loại giỏi và in ra
+- Khi chọn 4: Tìm 1 sinh viên xếp loại giỏi và hiển thị
 - Khi chọn 5: Cộng cho mỗi sinh viên 1 điểm toán
 - Khi chọn 6: Thêm thuộc tính sum để lưu tổng điểm 3 môn
 - Khi chọn 7: Tính tổng điểm của các sinh viên
-- Khi chọn 8: Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
-- Khi chọn 9: Tính điểm trung bình của các sinh viên
-- Khi chọn 10: Xóa sinh viên theo id
-- Khi chọn 11: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
+- Khi chọn 8: Tính điểm trung bình của các sinh viên
+- Khi chọn 9: Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+- Khi chọn 10: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
 
 ## Bài tập 3: Cho mảng sinh viên và mảng danh sách lớp như sau:
 
