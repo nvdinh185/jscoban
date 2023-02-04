@@ -147,14 +147,14 @@ function findGoodStudent(arrStudents) {
 
 // 5. Cộng cho mỗi sinh viên 1 điểm toán
 function addOneMath(arrStudents) {
-    arrStudents.map(function (student) {
+    arrStudents.forEach(function (student) {
         student.toan < 10 ? student.toan += 1 : '';
     });
 }
 
 // 6. Thêm thuộc tính tổng điểm
 function addPropertySum(arrStudents) {
-    arrStudents.map(function (student) {
+    arrStudents.forEach(function (student) {
         student.sum = student.toan + student.ly + student.hoa;
     })
 }
@@ -166,7 +166,7 @@ function countTotalScore(arrStudents) {
     }, 0);
 }
 
-// 8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+// 9. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
 function sortStudents(arrStudents) {
     function compare(a, b) {
         if (a.sum > b.sum) {

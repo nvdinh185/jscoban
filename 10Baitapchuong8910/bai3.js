@@ -23,7 +23,7 @@ const menu = `1. Nhập dữ liệu
 2. Xuất dữ liệu
 3. Tìm thông tin
 4. Xóa thông tin đội bóng
-0. Thoát
+5. Thoát
 
 Nhập thao tác lựa chọn:`;
 

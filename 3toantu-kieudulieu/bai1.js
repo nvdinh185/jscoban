@@ -8,4 +8,3 @@ var dienTich = chieuDai * chieuRong;
 
 console.log("Chu vi: " + chuVi);
 console.log("Dien tich: " + dienTich);
-

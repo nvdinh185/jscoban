@@ -24,7 +24,7 @@ const menu = `1. Nhập 1 quân bài
 3. Sắp xếp tăng dần
 4. Sắp xếp giảm dần
 5. Xuất dữ liệu
-0. Thoát
+6. Thoát
 
 Nhập thao tác lựa chọn:`;
 
