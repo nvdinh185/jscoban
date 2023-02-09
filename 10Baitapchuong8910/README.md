@@ -176,7 +176,7 @@ const students = [
         id: 3,
         name: "Tan",
         toan: 3,
-        ly: 4,
+        ly: 5,
         hoa: 5,
     },
     {
