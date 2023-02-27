@@ -5,8 +5,8 @@
 - In ra thông tin này sau 2 giây
 - Sử dụng comment để ghi chú những đoạn mã
 
-2. Bài 2: 
-- Khai báo biến a để nhận giá trị của alert()
-- Khai báo biến b để nhận giá trị của confirm()
-- Khai báo biến c để nhận giá trị của prompt()
+2. Bài 2:
+- Khai báo 2 biến hoten và tuoi
+- Dùng hàm prompt() để nhập giá trị cho biến hoten
+- Dùng hàm prompt() để nhập giá trị cho biến tuoi
 - In các kết quả ra console

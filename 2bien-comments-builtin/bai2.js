@@ -1,12 +1,5 @@
-var a = alert("Hello World!");
+var hoten = prompt("Nhập họ tên: ");
+var tuoi = prompt("Nhập tuổi: ");
 
-console.log(a); // underfined
-
-var b = confirm("Xác nhận!");
-
-console.log(b); // true/false
-
-var c = prompt("Nhập 1 số: ");
-
-console.log(c);
-console.log(typeof c);
+console.log('Họ tên là: ' + hoten);
+console.log('Tuổi là: ', tuoi);
