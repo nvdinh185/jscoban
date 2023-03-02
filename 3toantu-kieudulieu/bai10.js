@@ -1,13 +1,39 @@
-var number = prompt('Nhập 1 số: ');
+var check = true;
+var chieuDai = prompt("Nhập chiều dài: ");
 
-var t1 = 1, t2 = 1, next;
-while (t1 < number) {
-    next = t1 + t2;
-    t1 = t2;
-    t2 = next;
-}
-if (t1 === Number(number)) {
-    console.log(number + ' là số fibonacci!');
+if (chieuDai === '' || chieuDai === null) {
+    console.log("Vui lòng nhập chiều dài!");
+    check = false;
+} else if (isNaN(chieuDai)) {
+    console.log("Nhập chiều dài không đúng định dạng số!");
+    check = false;
+} else if (chieuDai <= 0) {
+    console.log('Chiều dài phải lớn hơn 0');
+    check = false;
 } else {
-    console.log(number + ' không phải là số fibonacci!');
+    chieuDai = Number(chieuDai);
+}
+
+var chieuRong = prompt("Nhập chiều rộng: ");
+
+if (chieuRong === '' || chieuRong === null) {
+    console.log("Vui lòng nhập chiều rộng!");
+    check = false;
+} else if (isNaN(chieuRong)) {
+    console.log("Nhập chiều rộng không đúng định dạng số!");
+    check = false;
+} else if (chieuRong <= 0) {
+    console.log('Chiều rộng phải lớn hơn 0');
+    check = false;
+} else {
+    chieuRong = Number(chieuRong);
+}
+
+if (check) {
+
+    var chuVi = (chieuDai + chieuRong) * 2;
+    var dienTich = chieuDai * chieuRong;
+
+    console.log("Chu vi: " + chuVi);
+    console.log("Dien tich: " + dienTich);
 }

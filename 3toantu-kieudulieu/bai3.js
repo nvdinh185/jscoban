@@ -1,17 +1,7 @@
-var a = prompt("Nhập a: ");
-var b = prompt("Nhập b: ");
+var canh = prompt("Nhập chiều dài cạnh hình vuông: ");
 
-a = Number(a);
-b = Number(b);
+var chuVi = canh * 4;
+var dienTich = canh * canh;
 
-var tong = a + b;
-var hieu = a - b;
-var tich = a * b;
-var thuong = a / b;
-var du = a % b;
-
-console.log("Tổng: " + tong);
-console.log("Hiệu: " + hieu);
-console.log("Tich: " + tich);
-console.log("Thương: " + thuong);
-console.log("Số dư: " + du);
+console.log("Chu vi: " + chuVi);
+console.log("Dien tich: " + dienTich);

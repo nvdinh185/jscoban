@@ -1,10 +1,11 @@
-var chieuDai = prompt("Nhập chiều dài: ");
-var chieuRong = prompt("Nhập chiều rộng: ");
-chieuDai = Number(chieuDai);
-chieuRong = Number(chieuRong);
+var a = prompt("Nhập a: ");
+var b = prompt("Nhập b: ");
 
-var chuVi = (chieuDai + chieuRong) * 2;
-var dienTich = chieuDai * chieuRong;
+a = Number(a);// chuyển từ string sang kiểu dữ liệu number
+b = Number(b);// chuyển từ string sang kiểu dữ liệu number
 
-console.log("Chu vi: " + chuVi);
-console.log("Dien tich: " + dienTich);
+var tong = a + b;
+var hieu = a - b;
+
+console.log("Tổng: " + tong);
+console.log("Hiệu: " + hieu);

@@ -1,14 +1,34 @@
-## Bài 1: Viết chương trình nhập chiều dài a, chiều rộng b của hình chữ nhật. Tính chu vi và diện tích của hình chữ nhật đó.
+# Bài tập toán tử, kiểu dữ liệu
 
-## Bài 2: Viết chương trình nhập bán kính R của hình tròn. Tính chu vi và diện tích của hình tròn đó.
+## Bài 1: 
+- Viết chương trình nhập 2 số a, b. Tính tổng và hiệu của 2 số đó rồi in kết quả ra màn hình.
 
-## Bài 3: Viết chương trình nhập 2 số a, b. Tính tổng, hiệu, tích, thương (chia lấy số thập phân, lấy phần dư).
+## Bài 2:
+- Viết chương trình nhập chiều dài a, chiều rộng b của hình chữ nhật. Tính chu vi và diện tích của hình chữ nhật đó.
 
-## Bài 4: Viết chương trình giải phương trình bậc 1: ax + b = 0 (xét tất cả các trường hợp, làm tròn kết quả 2 số thập phân).
+## Bài 3:
+- Viết chương trình nhập chiều dài một cạnh của hình vuông. Tính chu vi và diện tích của hình vuông đó.
 
-## Bài 5: Viết chương trình giải phương trình bậc 2: ax^2 + bx + c = 0 (xét tất cả các trường hợp, làm tròn kết quả 2 số thập phân).
+## Bài 4:
+- Viết chương trình nhập đáy trên a, đáy dưới b và chiều cao h của một hình thang. Tính diện tích của hình thang này.
 
-## Bài 6: Chạy đoạn chương trình sau và ghi chép những gì đã học được
+## Bài 5: 
+- Viết chương trình nhập bán kính R của hình tròn. Tính chu vi và diện tích của hình tròn đó.
+
+## Bài 6: 
+- Viết chương trình nhập 2 số a, b. Tính tích, thương (chia lấy số thập phân, lấy phần dư).
+
+## Bài 7:
+- Viết chương trình nhập vào 1 số rồi kiểm tra xem đó là số chẵn hay số lẻ.
+
+## Bài 8: 
+- Viết chương trình giải phương trình bậc 1: ax + b = 0 (xét tất cả các trường hợp, làm tròn kết quả 2 số thập phân).
+
+## Bài 9: 
+- Viết chương trình giải phương trình bậc 2: ax^2 + bx + c = 0 (xét tất cả các trường hợp, làm tròn kết quả 2 số thập phân).
+
+## Bài 10: 
+- Chạy đoạn chương trình sau và ghi chép những gì đã học được
 
 ```js
 var check = true;
@@ -52,9 +72,17 @@ if (check) {
 }
 ```
 
-## Bài 7: Viết chương trình nhập vào 3 số a, b, c. Kiểm tra xem 3 số đó có lập thành 1 tam giác không? Đó là tam giác gì?
+## Bài 11: 
+- Viết chương trình nhập vào 3 số a, b, c. Kiểm tra xem 3 số đó có lập thành 1 tam giác không? Đó là tam giác gì?
 
-## Bài 8: Viết chương trình nhập 1 số và kiểm tra có phải số nguyên tố không?
-## Bài 9: Viết chương trình nhập 1 số và kiểm tra có phải số hoàn hảo không?
-## Bài 10: Viết chương trình nhập 1 số và kiểm tra có phải số fibonacci không?
-## Bài 11: Viết chương trình nhập 1 số và kiểm tra có phải số đối xứng không?
+## Bài 12: 
+- Viết chương trình nhập 1 số và kiểm tra có phải số nguyên tố không?
+
+## Bài 13: 
+- Viết chương trình nhập 1 số và kiểm tra có phải số hoàn hảo không?
+
+## Bài 14: 
+- Viết chương trình nhập 1 số và kiểm tra có phải số fibonacci không?
+
+## Bài 15: 
+- Viết chương trình nhập 1 số và kiểm tra có phải số đối xứng không?

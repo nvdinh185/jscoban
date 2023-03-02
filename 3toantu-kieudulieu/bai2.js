@@ -1,19 +1,10 @@
-var banKinh = prompt("Nhập bán kính: ");
+var chieuDai = prompt("Nhập chiều dài: ");
+var chieuRong = prompt("Nhập chiều rộng: ");
+chieuDai = Number(chieuDai);// chuyển từ string sang kiểu dữ liệu number
+chieuRong = Number(chieuRong);// chuyển từ string sang kiểu dữ liệu number
 
-if (banKinh === '' || banKinh === null) {
-    alert('Vui long nhap!');
-} else if (isNaN(banKinh)) {
-    alert("Vui lòng nhập bán kính là số!");
-} else if (banKinh <= 0) {
-    alert('Phải nhập bán kính lớn hơn 0');
-} else {
+var chuVi = (chieuDai + chieuRong) * 2;
+var dienTich = chieuDai * chieuRong;
 
-    const PI = 3.14;
-
-    var banKinh = Number(banKinh);
-    var chuVi = banKinh * 2 * PI;
-    var dienTich = banKinh * banKinh * PI;
-
-    console.log("Chu vi: " + chuVi);
-    console.log("Dien tich: " + dienTich);
-}
+console.log("Chu vi: " + chuVi);
+console.log("Dien tich: " + dienTich);
