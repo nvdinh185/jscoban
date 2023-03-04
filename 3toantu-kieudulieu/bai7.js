@@ -1,5 +1,4 @@
 var number = prompt("Nhập một số: ");
-number = Number(number);// chuyển từ string sang kiểu dữ liệu number
 
 if (number % 2 === 0) {
     console.log(number + ' là số chắn!');
