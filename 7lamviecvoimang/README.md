@@ -1,15 +1,6 @@
-## Bài 1: Viết chương trình nhập mảng, xuất mảng, đảo mảng, sắp xếp mảng
-
-## Bài 2: Viết chương trình tạo 1 mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99. Xuất mảng ra màn hình console:
-1. Đếm xem có bao nhiêu số 0 trong mảng
-2. Đếm xem có bao nhiêu số nguyên tố trong mảng
-3. Đếm xem có bao nhiêu số hoàn hảo trong mảng
-4. Đếm xem có bao nhiêu số fibonacci trong mảng
-5. Đếm xem có bao nhiêu số đối xứng trong mảng
-
 # BÀI TẬP ĐỂ ÁP DỤNG CÁC HÀM CƠ BẢN ĐỐI VỚI MẢNG: pop, shift, push, unshift, splice, concat, slice
 
-## Bài 3: Cho mảng các số từ 1 đến 10 như sau:
+## Bài 1: Cho mảng các số từ 1 đến 10 như sau:
 
 ```js
 var arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -42,6 +33,17 @@ var arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var arrNumber2 = [11, 22, 33, 44, 55];
 ```
 - Nối mảng arrNumber2 vào mảng arrNumber
+
+## Bài 2: Viết chương trình nhập mảng, xuất mảng, đảo mảng, sắp xếp mảng
+
+## Bài 3: Viết chương trình tạo 1 mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99. Xuất mảng ra màn hình console:
+1. Đếm xem có bao nhiêu số 0 trong mảng
+2. Đếm xem có bao nhiêu số nguyên tố trong mảng
+3. Đếm xem có bao nhiêu số hoàn hảo trong mảng
+4. Đếm xem có bao nhiêu số fibonacci trong mảng
+5. Đếm xem có bao nhiêu số đối xứng trong mảng
+
+
 
 ## Bài 4: Chạy chương trình sau và ghi chép những gì đã học được
 ```js
