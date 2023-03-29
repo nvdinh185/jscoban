@@ -34,7 +34,7 @@ var arrNumber2 = [11, 22, 33, 44, 55];
 ```
 - Nối mảng arrNumber2 vào mảng arrNumber
 
-## Bài 2: Viết chương trình nhập mảng, xuất mảng, đảo mảng, sắp xếp mảng
+## Bài 2: Viết chương trình nhập mảng, xuất mảng, đảo mảng, sắp xếp mảng, tìm số lớn nhất trong mảng
 
 ## Bài 3: Viết chương trình tạo 1 mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99. Xuất mảng ra màn hình console:
 1. Đếm xem có bao nhiêu số 0 trong mảng

@@ -43,9 +43,20 @@ function bubbleSort(array) {
     }
 }
 
+function timMax(array) {
+    var max = array[0];
+    for (var i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
 var arNum = [];
 nhapMang(arNum, 5);
 xuatMang(arNum);
 // daoMang(arNum);
 bubbleSort(arNum);
 xuatMang(arNum);
+console.log('Số lớn nhất trong mảng là ' + timMax(arNum));

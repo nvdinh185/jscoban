@@ -24,7 +24,6 @@ function giaiPTB1(a, b) {
     }
 }
 
-
 var a = inputNumber("Nhập hệ số a: ");
 var b = inputNumber("Nhập hệ số b: ");
 

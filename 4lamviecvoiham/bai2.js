@@ -42,6 +42,7 @@ function giaiPTB2(a, b, c) {
         }
     }
 }
+
 var a = inputNumber("Nhập hệ số a: ");
 var b = inputNumber("Nhập hệ số b: ");
 var c = inputNumber("Nhập hệ số c: ");
