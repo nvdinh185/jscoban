@@ -7,6 +7,11 @@ function myFunc() {
     }
 }
 
+function myFunc2(a) {
+    console.log(a);
+    console.log(arguments);
+}
+
 // Hàm đảo mảng
 function daoMang() {
     var size = arguments.length;
@@ -21,5 +26,6 @@ function daoMang() {
     }
 }
 
+myFunc2(1, 2, 3);
 myFunc(2, 3, 4, 5, 6, 7, 8, 9);
 daoMang(2, 3, 4, 5, 6, 7, 8, 9);
