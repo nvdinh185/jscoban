@@ -1,40 +1,12 @@
-# BÀI TẬP ĐỂ ÁP DỤNG CÁC HÀM CƠ BẢN ĐỐI VỚI MẢNG: pop, shift, push, unshift, splice, concat, slice
+# BÀI TẬP VỀ MẢNG:
 
-## Bài 1: Cho mảng các số từ 1 đến 10 như sau:
+## Bài 1: Viết chương trình nhập 1 mảng, sau đó xuất mảng vừa nhập ra màn hình
 
-```js
-var arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-```
-
-1. in mảng theo thứ tự index tăng dần
-
-2. in mảng theo thứ tự index giảm dần
-
-3. Xóa phần tử cuối cùng của mảng
-
-4. Xóa phần tử đầu tiên của mảng
-
-5. Thêm phần tử 0 vào cuối mảng
-
-6. Thêm phần tử 0 vào đầu mảng
-
-7. Cắt mảng từ phần tử đầu tiên đến phần tử thứ 5 thành 1 mảng mới
-
-8. Chèn thêm số 100 vào phần tử thứ 5 của mảng
-
-9. Thay thế phần tử thứ 5 bằng số 100
-
-10. copy từ mảng arrNumber thành 1 mảng mới từ phần tử 5 đến hết
-
-11. copy từ mảng arrNumber thành 1 mảng mới từ phần tử đầu tiên đến phần tử thứ 5
-
-12. Cho mảng sau:
-```js
-var arrNumber2 = [11, 22, 33, 44, 55];
-```
-- Nối mảng arrNumber2 vào mảng arrNumber
-
-## Bài 2: Viết chương trình nhập mảng, xuất mảng, đảo mảng, sắp xếp mảng, tìm số lớn nhất trong mảng
+## Bài 2: Viết chương trình 1 nhập mảng các số:
+- xuất mảng vừa nhập
+- tìm số lớn nhất trong mảng
+- tìm số nhỏ nhất trong mảng
+- tính tổng các số trong mảng
 
 ## Bài 3: Viết chương trình tạo 1 mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99. Xuất mảng ra màn hình console:
 1. Đếm xem có bao nhiêu số 0 trong mảng
@@ -42,8 +14,6 @@ var arrNumber2 = [11, 22, 33, 44, 55];
 3. Đếm xem có bao nhiêu số hoàn hảo trong mảng
 4. Đếm xem có bao nhiêu số fibonacci trong mảng
 5. Đếm xem có bao nhiêu số đối xứng trong mảng
-
-
 
 ## Bài 4: Chạy chương trình sau và ghi chép những gì đã học được
 ```js
@@ -115,3 +85,8 @@ var arrNumber = ['111', '222', '333', '444']
 1. Kiểm tra xem mảng có phần tử nào có giá trị bằng 222 không? Nếu có thì xoá nó đi
 2. Nếu mảng có phần tử có kiểu và giá trị bằng 444 thì thay thế phần tử đó thành '555'
 3. Đổi tất cả phần tử trong mảng ra kiểu số, in mảng đó ra màn hình
+
+## Bài 6: Viết chương trình nhập 1 mảng các số:
+- xuất mảng vừa nhập
+- đảo các phần tử trong mảng
+- sắp xếp các phần tử trong mảng theo thứ tự tăng dần

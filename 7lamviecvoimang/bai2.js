@@ -1,62 +1,52 @@
 // Hàm nhập mảng các số từ bàn phím
 function nhapMang(array, n) {
-    for (var i = 0; i < n; i++) {
-        array.push(prompt('Nhập phần tử thứ ' + (i + 1)));
+    for (var i = 1; i <= n; i++) {
+        var n = prompt('Nhập phần tử thứ ' + i);
+        array.push(n);
     }
 }
 
 // Hàm xuất mảng ra màn hình console
 function xuatMang(array) {
-    for (var i = 0; i < array.length; i++) {
-        console.log(array[i]);
+    for (var el of array) {
+        console.log(el);
     }
 }
 
-// Hàm đảo mảng
-function daoMang(array) {
-    var size = array.length;
-    for (var i = 0; i < size / 2; i++) {
-        // hoán đổi phần tử
-        var temp = array[i];
-        array[i] = array[size - 1 - i];
-        array[size - 1 - i] = temp;
-    }
-}
-// Hàm sắp xếp mảng theo thứ tự tăng dần
-function bubbleSort(array) {
-    var size = array.length;
-    var haveSwap;
-    for (var i = 0; i < size - 1; i++) {
-        haveSwap = 0;
-        for (var j = 0; j < size - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                var temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
-                haveSwap++;
-            }
-        }
-        // console.log('haveSwap ', haveSwap);
-        if (haveSwap === 0) {
-            break;
-        }
-    }
-}
-
+// Hàm tìm số lớn nhất trong mảng
 function timMax(array) {
     var max = array[0];
-    for (var i = 1; i < array.length; i++) {
-        if (array[i] > max) {
-            max = array[i];
+    for (var el of array) {
+        if (el > max) {
+            max = el;
         }
     }
     return max;
 }
 
+// Hàm tìm số nhỏ nhất trong mảng
+function timMin(array) {
+    var min = array[0];
+    for (var el of array) {
+        if (el < min) {
+            min = el;
+        }
+    }
+    return min;
+}
+
+// Hàm tính tổng các phần tử trong mảng
+function sumArray(array) {
+    var sum = 0;
+    for (var el of array) {
+        sum += Number(el);
+    }
+    return sum;
+}
+
 var arNum = [];
 nhapMang(arNum, 5);
 xuatMang(arNum);
-// daoMang(arNum);
-bubbleSort(arNum);
-xuatMang(arNum);
-console.log('Số lớn nhất trong mảng là ' + timMax(arNum));
+console.log('Số lớn nhất: ' + timMax(arNum));
+console.log('Số nhỏ nhất: ' + timMin(arNum));
+console.log('Tổng các phần tử trong mảng: ' + sumArray(arNum));
