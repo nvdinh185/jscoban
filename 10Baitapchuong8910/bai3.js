@@ -27,23 +27,25 @@ const menu = `1. Nhập dữ liệu
 
 Nhập thao tác lựa chọn:`;
 
-var input = prompt(menu);
-
-if (input == 1) {
-    them();
-    display();
-} else if (input == 2) {
-    display();
-} else if (input == 3) {
-    display();
-    tim();
-} else if (input == 4) {
-    display();
-    xoa();
-    display();
-} else {
-    console.log('Goodbye!');
-}
+do {
+    var input = prompt(menu);
+    if (input == 1) {
+        them();
+        display();
+    } else if (input == 2) {
+        display();
+    } else if (input == 3) {
+        display();
+        tim();
+    } else if (input == 4) {
+        display();
+        xoa();
+        display();
+    } else {
+        console.log('Goodbye!');
+        break;
+    }
+} while (true);
 
 // 1. Thêm đội bóng
 function them() {

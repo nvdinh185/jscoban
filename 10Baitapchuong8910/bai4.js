@@ -28,25 +28,28 @@ const menu = `1. Nhập 1 quân bài
 
 Nhập thao tác lựa chọn:`;
 
-var input = prompt(menu);
+do {
+    var input = prompt(menu);
 
-if (input == 1) {
-    them1QuanBai();
-    hienThi();
-} else if (input == 2) {
-    nhapMangQuanBai();
-    hienThi();
-} else if (input == 3) {
-    bubbleSort();
-    hienThi();
-} else if (input == 4) {
-    bubbleSort(1);
-    hienThi();
-} else if (input == 5) {
-    hienThi();
-} else {
-    console.log('Goodbye!');
-}
+    if (input == 1) {
+        them1QuanBai();
+        alert('Đã thêm thành công!');
+    } else if (input == 2) {
+        nhapMangQuanBai();
+        alert('Đã thêm thành công!');
+    } else if (input == 3) {
+        bubbleSort();
+        alert('Đã sắp xếp thành công!');
+    } else if (input == 4) {
+        bubbleSort(1);
+        alert('Đã sắp xếp thành công!');
+    } else if (input == 5) {
+        hienThi();
+    } else {
+        console.log('Goodbye!');
+        break;
+    }
+} while (true);
 
 // 1. Thêm 1 quân bài
 function them1QuanBai() {
