@@ -52,17 +52,20 @@ const menu = ` -- GIẢI PHƯƠNG TRÌNH --
 Chọn thao tác thực hiện:
 `;
 
-var input = prompt(menu);
+do {
+    var input = prompt(menu);
 
-if (input === '1') {
-    var a = inputNumber("Nhập hệ số a: ");
-    var b = inputNumber("Nhập hệ số b: ");
-    giaiPTB1(a, b);
-} else if (input === '2') {
-    var a = inputNumber("Nhập hệ số a: ");
-    var b = inputNumber("Nhập hệ số b: ");
-    var c = inputNumber("Nhập hệ số c: ");
-    giaiPTB2(a, b, c);
-} else {
-    console.log('Good Bye!');
-}
+    if (input === '1') {
+        var a = inputNumber("Nhập hệ số a: ");
+        var b = inputNumber("Nhập hệ số b: ");
+        giaiPTB1(a, b);
+    } else if (input === '2') {
+        var a = inputNumber("Nhập hệ số a: ");
+        var b = inputNumber("Nhập hệ số b: ");
+        var c = inputNumber("Nhập hệ số c: ");
+        giaiPTB2(a, b, c);
+    } else {
+        console.log('Good Bye!');
+        break;
+    }
+} while (true);
