@@ -43,61 +43,64 @@ const menu = `== QUẢN LÝ SINH VIÊN ==
 4. Xóa sinh viên
 
 Nhập thao tác lựa chọn:`;
+do {
+    var input = prompt(menu);
 
-var input = prompt(menu);
-
-if (input == 1) {
-    console.log(students);
-} else if (input == 2) {
-    var newName = prompt("Nhập tên sinh viên: ");
-    var newAddress = prompt("Nhập địa chỉ: ");
-    var newStudent = {
-        id: students.length + 1,
-        name: newName,
-        address: newAddress
-    }
-
-    students.push(newStudent);
-    console.log(students);
-} else if (input == 3) {
-    var idEdit = prompt("Nhập mã sinh viên muốn sửa: ");
-
-    // Tìm chỉ số của sinh viên muốn sửa
-    var editIndex = searchIndex(Number(idEdit), students);
-
-    if (editIndex == -1) {
-        alert("Không tìm thấy sinh viên muốn sửa!");
-    } else {
-        // Lấy thông tin sinh viên muốn sửa
-        var editStudent = search(Number(idEdit), students);
-
-        var nameEdit = prompt("Nhập tên sinh viên muốn sửa: ", editStudent.name);
-        var addressEdit = prompt("Nhập địa chỉ sinh viên muốn sửa: ", editStudent.address);
-
-        var student = {
-            id: Number(idEdit),
-            name: nameEdit,
-            address: addressEdit
+    if (input == 1) {
+        display(students);
+    } else if (input == 2) {
+        var newName = prompt("Nhập tên sinh viên: ");
+        var newAddress = prompt("Nhập địa chỉ: ");
+        var newStudent = {
+            id: students.length + 1,
+            name: newName,
+            address: newAddress
         }
-        students.splice(editIndex, 1, student);
-    }
-    console.log(students);
-} else if (input == 4) {
-    var idDel = prompt("Nhập mã sinh viên muốn xóa: ");
 
-    // Tìm chỉ số của sinh viên muốn xóa
-    var delIndex = searchIndex(Number(idDel), students);
+        students.push(newStudent);
+        console.log(students);
+    } else if (input == 3) {
+        var idEdit = prompt("Nhập mã sinh viên muốn sửa: ");
 
-    if (delIndex != -1) {
-        students.splice(delIndex, 1);
-        alert("Đã xóa thành công sinh viên có mã " + idDel);
+        // Tìm chỉ số của sinh viên muốn sửa
+        var editIndex = searchIndex(Number(idEdit), students);
+
+        if (editIndex == -1) {
+            alert("Không tìm thấy sinh viên muốn sửa!");
+        } else {
+            // Lấy thông tin sinh viên muốn sửa
+            var editStudent = search(Number(idEdit), students);
+
+            var nameEdit = prompt("Nhập tên sinh viên muốn sửa: ", editStudent.name);
+            var addressEdit = prompt("Nhập địa chỉ sinh viên muốn sửa: ", editStudent.address);
+
+            var student = {
+                id: Number(idEdit),
+                name: nameEdit,
+                address: addressEdit
+            }
+            students.splice(editIndex, 1, student);
+        }
+        console.log(students);
+    } else if (input == 4) {
+        var idDel = prompt("Nhập mã sinh viên muốn xóa: ");
+
+        // Tìm chỉ số của sinh viên muốn xóa
+        var delIndex = searchIndex(Number(idDel), students);
+
+        if (delIndex != -1) {
+            students.splice(delIndex, 1);
+            alert("Đã xóa thành công sinh viên có mã " + idDel);
+        } else {
+            alert("Không tìm thấy sinh viên muốn xóa!");
+        }
+        console.log(students);
     } else {
-        alert("Không tìm thấy sinh viên muốn xóa!");
+        console.log("Good bye!");
+        break;
+
     }
-    console.log(students);
-} else {
-    alert("Vui lòng nhập đúng thao tác lựa chọn!");
-}
+} while (true);
 
 function searchIndex(id, array) {
     for (let i = 0; i < array.length; i++) {
@@ -109,5 +112,16 @@ function searchIndex(id, array) {
 function search(id, array) {
     for (let i = 0; i < array.length; i++) {
         if (array[i].id === id) return array[i];
+    }
+}
+
+// Hàm hiển thị danh sách sinh viên
+function display(arrStudents) {
+    console.log('===DANH SÁCH SINH VIÊN===');
+    for (const el of arrStudents) {
+        for (const key in el) {
+            console.log(key + ": " + el[key]);
+        }
+        console.log("================");
     }
 }

@@ -37,6 +37,7 @@ function search(number, array) {
 
 var arrayNumber = [];
 
+// Lặp để tạo mảng gồm 10 số ngẫu nhiên từ 0 đến 9
 for (let i = 0; i < 10; i++) {
     arrayNumber.push(getRandomInt(10));
 }

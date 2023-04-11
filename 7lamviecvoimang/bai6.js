@@ -1,8 +1,8 @@
 // Hàm nhập mảng các số từ bàn phím
 function nhapMang(array, n) {
     for (var i = 1; i <= n; i++) {
-        var n = prompt('Nhập phần tử thứ ' + i);
-        array.push(n);
+        var el = prompt('Nhập phần tử thứ ' + i);
+        array.push(el);
     }
 }
 
@@ -23,7 +23,8 @@ function daoMang(array) {
         array[size - 1 - i] = temp;
     }
 }
-// Hàm sắp xếp mảng theo thứ tự tăng dần
+
+// Hàm sắp xếp mảng tăng dần
 function bubbleSort(array) {
     var size = array.length;
     var haveSwap;
@@ -44,9 +45,32 @@ function bubbleSort(array) {
     }
 }
 
+const menu = ` -- CHỌN CHỨC NĂNG --
+1. Nhập mảng
+2. Xuất mảng
+3. Đảo mảng
+4. Sắp xếp mảng
+5. Thoát
+
+Chọn thao tác thực hiện:
+`;
+
 var arNum = [];
-nhapMang(arNum, 5);
-xuatMang(arNum);
-daoMang(arNum);
-// bubbleSort(arNum);
-xuatMang(arNum);
+
+do {
+    var input = prompt(menu);
+    if (input === '1') {
+        var number = prompt('Nhập số phần tử của mảng: ');
+        nhapMang(arNum, number);
+    } else if (input === '2') {
+        xuatMang(arNum);
+    } else if (input === '3') {
+        daoMang(arNum);
+        xuatMang(arNum);
+    } else if (input === '4') {
+        bubbleSort(arNum);
+        xuatMang(arNum);
+    } else {
+        break;
+    }
+} while (true);

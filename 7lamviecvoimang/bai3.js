@@ -114,14 +114,34 @@ function bubbleSort(array) {
 
 var arrayNumber = [];
 
-for (var i = 0; i < 100; i++) {
-    arrayNumber.push(getRandomInt(100));
-}
+const menu = ` -- CHỌN CHỨC NĂNG --
+1. Nhập mảng
+2. Xuất mảng
+3. Đếm số 0
+4. Đếm số nguyên tố
+5. Đếm số hoàn hảo
+6. Thoát
 
-bubbleSort(arrayNumber);
-console.log(arrayNumber);
-console.log(count(0, arrayNumber));
-console.log(countSNT(arrayNumber));
-console.log(countSHH(arrayNumber));
-console.log(countSFb(arrayNumber));
-console.log(countSDX(arrayNumber));
+Chọn thao tác thực hiện:
+`;
+
+
+do {
+    var input = prompt(menu);
+    if (input === '1') {
+        for (var i = 0; i < 100; i++) {
+            arrayNumber.push(getRandomInt(100));
+        }
+        bubbleSort(arrayNumber);
+    } else if (input === '2') {
+        console.log(arrayNumber);
+    } else if (input === '3') {
+        console.log(count(0, arrayNumber));
+    } else if (input === '4') {
+        console.log(countSNT(arrayNumber));
+    } else if (input === '5') {
+        console.log(countSHH(arrayNumber));
+    } else {
+        break;
+    }
+} while (true);

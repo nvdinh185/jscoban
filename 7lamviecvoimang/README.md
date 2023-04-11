@@ -2,18 +2,42 @@
 
 ## Bài 1: Viết chương trình nhập 1 mảng, sau đó xuất mảng vừa nhập ra màn hình
 
-## Bài 2: Viết chương trình 1 nhập mảng các số:
-- xuất mảng vừa nhập
-- tìm số lớn nhất trong mảng
-- tìm số nhỏ nhất trong mảng
-- tính tổng các số trong mảng
+## Bài 2: Tạo menu như sau:
+---------------------------------------
+-- CHỌN CHỨC NĂNG --
+1. Nhập mảng
+2. Xuất mảng
+3. Tìm số lớn nhất
+4. Tìm số nhỏ nhất
+5. Tính tổng
+6. Thoát
+---------------------------------------
 
-## Bài 3: Viết chương trình tạo 1 mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99. Xuất mảng ra màn hình console:
-1. Đếm xem có bao nhiêu số 0 trong mảng
-2. Đếm xem có bao nhiêu số nguyên tố trong mảng
-3. Đếm xem có bao nhiêu số hoàn hảo trong mảng
-4. Đếm xem có bao nhiêu số fibonacci trong mảng
-5. Đếm xem có bao nhiêu số đối xứng trong mảng
+- Khi chọn 1: Gọi hàm để nhập mảng
+- Khi chọn 2: Gọi hàm để xuất mảng
+- Khi chọn 3: Gọi hàm tìm số lớn nhất trong mảng
+- Khi chọn 4: Gọi hàm tìm số nhỏ nhất trong mảng
+- Khi chọn 5: Gọi hàm tính tổng các số trong mảng
+- Khi chọn 6: Thoát khỏi chương trình
+
+
+## Bài 3: Tạo menu như sau:
+---------------------------------------
+-- CHỌN CHỨC NĂNG --
+1. Nhập mảng
+2. Xuất mảng
+3. Đếm số 0
+4. Đếm số nguyên tố
+5. Đếm số hoàn hảo
+6. Thoát
+---------------------------------------
+
+- Khi chọn 1: Gọi hàm nhập mảng
+- Khi chọn 2: Gọi hàm xuất mảng
+- Khi chọn 3. Đếm xem có bao nhiêu số 0 trong mảng
+- Khi chọn 4. Đếm xem có bao nhiêu số nguyên tố trong mảng
+- Khi chọn 5. Đếm xem có bao nhiêu số hoàn hảo trong mảng
+- Khi chọn 6. Thoát khỏi chương trình
 
 ## Bài 4: Chạy chương trình sau và ghi chép những gì đã học được
 ```js
@@ -86,7 +110,18 @@ var arrNumber = ['111', '222', '333', '444']
 2. Nếu mảng có phần tử có kiểu và giá trị bằng 444 thì thay thế phần tử đó thành '555'
 3. Đổi tất cả phần tử trong mảng ra kiểu số, in mảng đó ra màn hình
 
-## Bài 6: Viết chương trình nhập 1 mảng các số:
-- xuất mảng vừa nhập
-- đảo các phần tử trong mảng
-- sắp xếp các phần tử trong mảng theo thứ tự tăng dần
+## Bài 6: Tạo menu như sau:
+---------------------------------------
+-- CHỌN CHỨC NĂNG --
+1. Nhập mảng
+2. Xuất mảng
+3. Đảo mảng
+4. Sắp xếp mảng
+5. Thoát
+---------------------------------------
+
+- Khi chọn 1: Gọi hàm nhập mảng
+- Khi chọn 2: Gọi hàm xuất mảng
+- Khi chọn 3: Gọi hàm đảo các phần tử của mảng
+- Khi chọn 4: Gọi hàm sắp xếp các phần tử của mảng theo thứ tự tăng dần
+- Khi chọn 5: Thoát khỏi chương trình
