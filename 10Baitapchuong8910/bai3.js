@@ -27,20 +27,23 @@ const menu = `1. Nhập dữ liệu
 
 Nhập thao tác lựa chọn:`;
 
+function generateUuid() {
+    return 'xxxx-xxxx-xxx-xxxx'.replace(/[x]/g, function (c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+}
+
 do {
     var input = prompt(menu);
     if (input == 1) {
         them();
-        display();
     } else if (input == 2) {
         display();
     } else if (input == 3) {
-        display();
         tim();
     } else if (input == 4) {
-        display();
         xoa();
-        display();
     } else {
         console.log('Goodbye!');
         break;
@@ -53,7 +56,7 @@ function them() {
     var huanLuyenVien = prompt('Nhập tên huấn luyện viên:');
     var soLanVoDich = prompt('Nhập số lần vô địch: ');
     var doiBongMoi = {
-        id: danhSachDoiBong.length + 1,
+        id: generateUuid(),
         ten: ten,
         huanLuyenVien: huanLuyenVien,
         soLanVoDich: Number(soLanVoDich)
