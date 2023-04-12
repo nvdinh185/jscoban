@@ -18,7 +18,7 @@
 
 ## Bài 9: Viết chương trình nhập 1 số và kiểm tra xem số đó có phải số hoàn hảo không?
 
-## Bài 10: Viết chương trình nhập 1 số dương, nếu nhập đúng thì in số đó ra, nếu không thì nhập lại cho đến khi nhập đúng
+## Bài 10: Viết chương trình nhập 1 số dương, nếu nhập đúng thì in số đó ra, nếu không thì nhập lại cho đến khi nhập đúng (dùng vòng lặp do...while)
 
 ## Bài 11: Cho mảng sinh viên như sau:
 ```js
