@@ -8,13 +8,6 @@ const menu = `== TỪ ĐIỂN ANH VIỆT ==
 
 Nhập thao tác lựa chọn:`;
 
-function generateUuid() {
-    return 'xxxx-xxxx-xxx-xxxx'.replace(/[x]/g, function (c) {
-        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
-}
-
 var cont = true;
 do {
     var input = prompt(menu);
@@ -27,7 +20,6 @@ do {
             var eng = prompt("Nhập từ tiếng Anh: ");
             var vie = prompt("Nhập nghĩa tiếng Việt: ");
             var newWord = {
-                id: generateUuid(),
                 eng: eng,
                 vie: vie
             }

@@ -1,18 +1,18 @@
 const danhSachDoiBong = [
     {
-        id: 1,
+        id: '1',
         ten: 'Brazin',
         huanLuyenVien: 'Tite',
         soLanVoDich: 15
     },
     {
-        id: 2,
+        id: '2',
         ten: 'Đức',
         huanLuyenVien: 'Hansi Flick',
         soLanVoDich: 10
     },
     {
-        id: 3,
+        id: '3',
         ten: 'Pháp',
         huanLuyenVien: 'Deschamps',
         soLanVoDich: 12
@@ -26,13 +26,6 @@ const menu = `1. Nhập dữ liệu
 5. Thoát
 
 Nhập thao tác lựa chọn:`;
-
-function generateUuid() {
-    return 'xxxx-xxxx-xxx-xxxx'.replace(/[x]/g, function (c) {
-        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
-}
 
 do {
     var input = prompt(menu);
@@ -52,11 +45,12 @@ do {
 
 // 1. Thêm đội bóng
 function them() {
+    var id = prompt('Nhập mã đội bóng:');
     var ten = prompt('Nhập tên đội bóng:');
     var huanLuyenVien = prompt('Nhập tên huấn luyện viên:');
     var soLanVoDich = prompt('Nhập số lần vô địch: ');
     var doiBongMoi = {
-        id: generateUuid(),
+        id: id,
         ten: ten,
         huanLuyenVien: huanLuyenVien,
         soLanVoDich: Number(soLanVoDich)
@@ -78,7 +72,7 @@ function display() {
 // 3. Tìm đội bóng
 function tim() {
     var id = prompt('Nhập id đội bóng muốn tìm: ');
-    var doiBong = search(Number(id), danhSachDoiBong);
+    var doiBong = search(id, danhSachDoiBong);
     if (doiBong) {
         console.log(doiBong);
     } else {
@@ -89,7 +83,7 @@ function tim() {
 // 4. Xóa đội bóng
 function xoa() {
     var id = prompt('Nhập id đội bóng muốn xóa: ');
-    var idx = searchIndex(Number(id), danhSachDoiBong);
+    var idx = searchIndex(id, danhSachDoiBong);
     if (idx != -1) {
         danhSachDoiBong.splice(idx, 1);
     } else {
