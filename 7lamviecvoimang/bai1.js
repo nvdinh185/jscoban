@@ -8,7 +8,7 @@ function nhapMang(array, n) {
 
 // Hàm xuất mảng ra màn hình console
 function xuatMang(array) {
-    for (var i = 0; i < n; i++) {
+    for (var i = 0; i < array.length; i++) {
         console.log(array[i]);
     }
 }
