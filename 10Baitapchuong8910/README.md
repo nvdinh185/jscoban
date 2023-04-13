@@ -1,4 +1,4 @@
-# BÀI TẬP ĐỂ ÁP DỤNG HÀM, VÒNG LẶP ĐỐI VỚI MẢNG
+# BÀI TẬP ĐỂ ÁP DỤNG HÀM, VÒNG LẶP ĐỐI VỚI MẢNG CÁC OBJECT
 
 ## Bài tập 1: Cho mảng sinh viên gồm các thông tin như sau:
 

@@ -91,6 +91,7 @@ function xoa() {
     }
 }
 
+// Hàm tìm chỉ số của phần tử trong mảng
 function searchIndex(id, array) {
     for (let i = 0; i < array.length; i++) {
         if (array[i].id === id) return i;
@@ -98,6 +99,7 @@ function searchIndex(id, array) {
     return -1;
 }
 
+// Hàm tìm phần tử trong mảng
 function search(id, array) {
     for (let i = 0; i < array.length; i++) {
         if (array[i].id === id) return array[i];

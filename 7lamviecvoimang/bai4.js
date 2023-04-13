@@ -56,5 +56,5 @@ if (idx !== -1) {
     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
 }
 
-bubbleSort(arrayNumber);
+bubbleSort(arrayNumber);// gọi hàm sắp xếp mảng theo thứ tự tăng dần
 console.log(arrayNumber);

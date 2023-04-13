@@ -8,7 +8,7 @@
 
 ## Bài 4: Viết chương trình nhập 2 số a, b (a < b). In ra các số là ước của 12 trong khoảng a, b
 
-## Bài 5: Viết chương trình nhập 1 số và in ra các ước của só đó
+## Bài 5: Viết chương trình nhập 1 số và in ra các ước của số đó
 
 ## Bài 6: Viết chương trình nhập 1 số và tính tổng các ước của số đó
 
