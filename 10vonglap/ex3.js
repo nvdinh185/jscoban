@@ -1,29 +1,29 @@
 // Chương trình nhập 1 số dương, nếu nhập đúng thì in số đó ra, nếu không thì nhập lại cho đến khi nhập đúng
 
 // Cách 1:
-// var check = true;
+var check = true;
 
-// do {
+do {
 
-//     var n = prompt('Nhập 1 số (c1): ');
+    var n = prompt('Nhập 1 số (c1): ');
 
-//     if (n > 0) {
-//         check = false;
-//         console.log('Số vừa nhập là: ' + n);
-//     }
+    if (n > 0) {
+        check = false;
+        console.log('Số vừa nhập là: ' + n);
+    }
 
-// } while (check);
+} while (check);
 
 // Cách 2:
 
-// do {
-//     var n = prompt('Nhập 1 số (c2): ');
+do {
+    var n = prompt('Nhập 1 số (c2): ');
 
-//     if (n > 0) {
-//         console.log('Số vừa nhập là: ' + n);
-//         break;
-//     }
-// } while (true);
+    if (n > 0) {
+        console.log('Số vừa nhập là: ' + n);
+        break;
+    }
+} while (true);
 
 // Cách 3:
 

@@ -1,3 +1,5 @@
+// Dùng vòng lặp for of và for in để in mảng các object
+
 function displayArray(array) {
     for (var el of array) {
         for (var key in el) {

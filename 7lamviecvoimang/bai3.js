@@ -117,10 +117,12 @@ var arrayNumber = [];
 const menu = ` -- CHỌN CHỨC NĂNG --
 1. Nhập mảng
 2. Xuất mảng
-3. Đếm số 0
-4. Đếm số nguyên tố
-5. Đếm số hoàn hảo
-6. Thoát
+3. In số nguyên tố
+4. In số hoàn hảo
+5. Đếm số 0
+6. Đếm số nguyên tố
+7. Đếm số hoàn hảo
+8. Thoát
 
 Chọn thao tác thực hiện:
 `;
@@ -136,10 +138,22 @@ do {
     } else if (input === '2') {
         console.log(arrayNumber);
     } else if (input === '3') {
-        console.log(count(0, arrayNumber));
+        for (var i = 0; i < arrayNumber.length; i++) {
+            if (soNguyenTo(arrayNumber[i])) {
+                console.log(arrayNumber[i]);
+            }
+        }
     } else if (input === '4') {
-        console.log(countSNT(arrayNumber));
+        for (var i = 0; i < arrayNumber.length; i++) {
+            if (soHoanHao(arrayNumber[i])) {
+                console.log(arrayNumber[i]);
+            }
+        }
     } else if (input === '5') {
+        console.log(count(0, arrayNumber));
+    } else if (input === '6') {
+        console.log(countSNT(arrayNumber));
+    } else if (input === '7') {
         console.log(countSHH(arrayNumber));
     } else {
         break;

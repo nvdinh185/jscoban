@@ -26,18 +26,22 @@
 -- CHỌN CHỨC NĂNG --
 1. Nhập mảng
 2. Xuất mảng
-3. Đếm số 0
-4. Đếm số nguyên tố
-5. Đếm số hoàn hảo
-6. Thoát
+3. In số nguyên tố
+4. In số hoàn hảo
+5. Đếm số 0
+6. Đếm số nguyên tố
+7. Đếm số hoàn hảo
+8. Thoát
 ---------------------------------------
 
 - Khi chọn 1: Gọi hàm nhập mảng
 - Khi chọn 2: Gọi hàm xuất mảng
-- Khi chọn 3. Đếm xem có bao nhiêu số 0 trong mảng
-- Khi chọn 4. Đếm xem có bao nhiêu số nguyên tố trong mảng
-- Khi chọn 5. Đếm xem có bao nhiêu số hoàn hảo trong mảng
-- Khi chọn 6. Thoát khỏi chương trình
+- Khi chọn 3. In các số nguyên tố trong mảng
+- Khi chọn 4. In các số hoàn hảo trong mảng
+- Khi chọn 5. Đếm xem có bao nhiêu số 0 trong mảng
+- Khi chọn 6. Đếm xem có bao nhiêu số nguyên tố trong mảng
+- Khi chọn 7. Đếm xem có bao nhiêu số hoàn hảo trong mảng
+- Khi chọn 8. Thoát khỏi chương trình
 
 ## Bài 4: Chạy chương trình sau và ghi chép những gì đã học được
 ```js
