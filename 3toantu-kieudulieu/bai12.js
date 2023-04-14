@@ -1,4 +1,7 @@
-var number = prompt('Nhập 1 số: ');
+do {
+    var number = prompt('Nhập 1 số: ');
+} while (number <= 0);
+
 
 var s = 0;
 for (var i = 2; i < number; i++) {
