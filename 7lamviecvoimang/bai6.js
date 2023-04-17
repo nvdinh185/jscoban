@@ -31,7 +31,7 @@ function bubbleSort(array) {
     for (var i = 0; i < size - 1; i++) {
         haveSwap = 0;
         for (var j = 0; j < size - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
+            if (Number(array[j]) > Number(array[j + 1])) {
                 var temp = array[j];
                 array[j] = array[j + 1];
                 array[j + 1] = temp;
