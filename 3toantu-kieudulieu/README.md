@@ -72,5 +72,5 @@ if (check) {
 }
 ```
 
-## Bài 11: 
+## Bài 11: Áp dụng những gì học được trong bài 10 để làm bài tập sau:
 - Viết chương trình nhập vào 3 số a, b, c. Kiểm tra xem 3 số đó có lập thành 1 tam giác không? Đó là tam giác gì?
