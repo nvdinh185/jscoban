@@ -38,7 +38,7 @@
 - Khi chọn 2: Gọi hàm xuất mảng
 - Khi chọn 3. In các số nguyên tố trong mảng
 - Khi chọn 4. In các số hoàn hảo trong mảng
-- Khi chọn 5. Đếm xem có bao nhiêu số 0 trong mảng
+- Khi chọn 5. Đếm xem có bao nhiêu phần tử 0 trong mảng
 - Khi chọn 6. Đếm xem có bao nhiêu số nguyên tố trong mảng
 - Khi chọn 7. Đếm xem có bao nhiêu số hoàn hảo trong mảng
 - Khi chọn 8. Thoát khỏi chương trình
@@ -114,18 +114,21 @@ var arrNumber = ['111', '222', '333', '444']
 2. Nếu mảng có phần tử có kiểu và giá trị bằng 444 thì thay thế phần tử đó thành '555'
 3. Đổi tất cả phần tử trong mảng ra kiểu số, in mảng đó ra màn hình
 
-## Bài 6: Tạo menu như sau:
+## Bài 6: Áp dụng những gi học được ở bài 4 để làm bài sau:
+### Tạo menu như sau:
 ---------------------------------------
 -- CHỌN CHỨC NĂNG --
-1. Nhập mảng
+1. Tạo mảng
 2. Xuất mảng
 3. Đảo mảng
 4. Sắp xếp mảng
-5. Thoát
+5. Tìm 1 số
+6. Thoát
 ---------------------------------------
 
-- Khi chọn 1: Gọi hàm nhập mảng
+- Khi chọn 1: Gọi hàm tạo mảng gồm 10 phần tử là các số ngẫu nhiên từ 0 đến 100
 - Khi chọn 2: Gọi hàm xuất mảng
 - Khi chọn 3: Gọi hàm đảo các phần tử của mảng
 - Khi chọn 4: Gọi hàm sắp xếp các phần tử của mảng theo thứ tự tăng dần
-- Khi chọn 5: Thoát khỏi chương trình
+- Khi chọn 5: Gọi hàm nhập 1 số bất kỳ rồi tìm số đó trong mảng, nếu có thì in chỉ số của phần tử tìm thấy, nếu không thì in "Không tìm thấy"
+- Khi chọn 6: Thoát khỏi chương trình
