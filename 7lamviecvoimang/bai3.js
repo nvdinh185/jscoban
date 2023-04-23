@@ -21,31 +21,6 @@ function soHoanHao(n) {
     return false;
 }
 
-// Hàm kiểm tra số Fibonacci
-function soFibonacci(n) {
-    var t1 = 1, t2 = 1, next;
-    while (t1 < n) {
-        next = t1 + t2;
-        t1 = t2;
-        t2 = next;
-    }
-    if (t1 === n) return true;
-    return false;
-}
-
-// Hàm kiểm tra số đối xứng
-function soDoiXung(n) {
-    var soGoc, soDao = 0, donVi;
-    soGoc = n;
-    while (n > 0) {
-        donVi = n % 10;
-        soDao = soDao * 10 + donVi;
-        n = Math.floor(n / 10);
-    }
-    if (soGoc === soDao) return true;
-    return false;
-}
-
 // Hàm đếm số lầm xuất hiện một số trong mảng
 function count(number, array) {
     var count = 0;
@@ -69,24 +44,6 @@ function countSHH(array) {
     var count = 0;
     for (var n of array) {
         if (soHoanHao(n)) count++;
-    }
-    return count;
-}
-
-// Hàm đếm số fibonacci trong mảng
-function countSFb(array) {
-    var count = 0;
-    for (var n of array) {
-        if (soFibonacci(n)) count++;
-    }
-    return count;
-}
-
-// Hàm đếm số đối xứng trong mảng
-function countSDX(array) {
-    var count = 0;
-    for (var n of array) {
-        if (soDoiXung(n)) count++;
     }
     return count;
 }
