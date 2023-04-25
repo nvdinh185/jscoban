@@ -16,7 +16,7 @@
 - Viết chương trình nhập bán kính R của hình tròn. Tính chu vi và diện tích của hình tròn đó.
 
 ## Bài 6: 
-- Viết chương trình nhập 2 số a, b. Tính tích, thương (chia lấy số thập phân, lấy phần dư).
+- Viết chương trình nhập 2 số a, b. Tính tích, thương, số dư của 2 số a, b.
 
 ## Bài 7:
 - Viết chương trình nhập vào 1 số rồi kiểm tra xem đó là số chẵn hay số lẻ.
