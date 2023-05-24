@@ -21,12 +21,8 @@
 4. Tìm số nhỏ nhất
 - Sử dụng đối tượng arguments
 
-## Bài 5: Viết chương trình có sử dụng hàm để hoán đổi giá trị 2 biến
+## Bài 5: Viết hàm kiểm tra xem 1 số có phải là số nguyên tố không?
+## Bài 6: Viết hàm kiểm tra xem 1 số có phải là số hoàn hảo không?
 
-## Bài 6: Viết hàm kiểm tra xem 1 số có phải là số nguyên tố không?
-## Bài 7: Viết hàm kiểm tra xem 1 số có phải là số hoàn hảo không?
-## Bài 8: Viết hàm kiểm tra xem 1 số có phải là số fibonacci không?
-## Bài 9: Viết hàm kiểm tra xem 1 số có phải là số đối xứng không?
-
-## Bài 10: Viết chương trình có sử dụng hàm nhận vào 1 dãy số => in ra các số nguyên tố trong dãy đó
+## Bài 7: Viết chương trình có sử dụng hàm nhận vào 1 dãy số => in ra các số nguyên tố trong dãy đó
 ![alt text](bai10.png)
