@@ -1,3 +1,5 @@
+// Viết chương trình nhập vào 3 số a, b, c. Kiểm tra xem 3 số đó có lập thành 1 tam giác không? Đó là tam giác gì?
+
 var a = prompt("Nhập a: ");
 var b = prompt("Nhập b: ");
 var c = prompt("Nhập c: ");

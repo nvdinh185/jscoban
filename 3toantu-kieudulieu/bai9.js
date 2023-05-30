@@ -1,11 +1,9 @@
+// Viết chương trình giải phương trình bậc 2: ax^2 + bx + c = 0 (xét tất cả các trường hợp, làm tròn kết quả 2 số thập phân).
+
 var a = prompt("Nhập hệ số a: ");
 var b = prompt("Nhập hệ số b: ");
 var c = prompt("Nhập hệ số c: ");
 
-// Chuyển sang kiểu dữ liệu số
-a = Number(a);
-b = Number(b);
-c = Number(c);
 if (a === 0) {
     if (b === 0 && c === 0) {
         console.log("Phương trình vô số nghiệm!");

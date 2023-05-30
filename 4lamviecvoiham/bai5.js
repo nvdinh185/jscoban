@@ -1,13 +1,15 @@
-function swap(x, y) {
-    console.log('Trong ham: Truoc khi hoan doi: ', x, y);
-    var t = x;
-    x = y;
-    y = t;
-    console.log('Trong ham: Sau khi hoan doi: ', x, y);
+// Hàm kiểm tra số nguyên tố
+function soNguyenTo(n) {
+    for (var i = 2; i < n; i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
 }
 
-var a = 1;
-var b = 2;
-console.log('Ngoai ham: Truoc khi hoan doi: ', a, b);
-swap(a, b);
-console.log('Ngoai ham: Sau khi hoan doi: ', a, b);
+var number = prompt('Nhập số muốn kiểm tra: ');
+number = Number(number);
+if (soNguyenTo(number)) {
+    console.log('Số đã nhập là số nguyên tố!');
+} else {
+    console.log('Không phải là số nguyên tố!');
+}

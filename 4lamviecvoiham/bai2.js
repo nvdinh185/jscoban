@@ -1,3 +1,5 @@
+// Viết chương trình (có sử dụng hàm) giải phương trình bậc 2: ax^2 + bx + c = 0 (xét tất cả các trường hợp).
+
 function giaiPTB1(a, b) {
     if (a === 0 && b === 0) {
         console.log("Phương trình vô số nghiệm!");
@@ -28,9 +30,5 @@ function giaiPTB2(a, b, c) {
 var a = prompt("Nhập hệ số a: ");
 var b = prompt("Nhập hệ số b: ");
 var c = prompt("Nhập hệ số c: ");
-// Chuyển sang kiểu dữ liệu số
-a = Number(a);
-b = Number(b);
-c = Number(c);
 
 giaiPTB2(a, b, c);

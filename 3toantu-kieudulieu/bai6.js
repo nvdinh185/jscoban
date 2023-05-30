@@ -1,3 +1,5 @@
+// Viết chương trình nhập 2 số a, b. Tính tích, thương, số dư của 2 số a, b.
+
 var a = prompt("Nhập a: ");
 var b = prompt("Nhập b: ");
 

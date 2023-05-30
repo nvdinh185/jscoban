@@ -21,8 +21,8 @@
 4. Tìm số nhỏ nhất
 - Sử dụng đối tượng arguments
 
-## Bài 5: Viết hàm kiểm tra xem 1 số có phải là số nguyên tố không?
-## Bài 6: Viết hàm kiểm tra xem 1 số có phải là số hoàn hảo không?
+## Bài 5: Viết chương trình (có sử dụng hàm) kiểm tra xem 1 số có phải là số nguyên tố không?
+## Bài 6: Viết chương trình (có sử dụng hàm) kiểm tra xem 1 số có phải là số hoàn hảo không?
 
 ## Bài 7: Viết chương trình có sử dụng hàm nhận vào 1 dãy số => in ra các số nguyên tố trong dãy đó
-![alt text](bai10.png)
+![alt text](bai7.png)

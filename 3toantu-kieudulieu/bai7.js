@@ -1,3 +1,5 @@
+// Viết chương trình nhập vào 1 số rồi kiểm tra xem đó là số chẵn hay số lẻ.
+
 var number = prompt("Nhập một số: ");
 
 if (number % 2 === 0) {
