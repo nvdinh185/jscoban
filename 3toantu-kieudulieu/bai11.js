@@ -3,7 +3,7 @@ var b = prompt("Nhập b: ");
 var c = prompt("Nhập c: ");
 
 var check = true;
-if (a === '' || a === null) {
+if (a == '' || a == null) {
     console.log("Vui lòng nhập!");
     check = false;
 } else if (isNaN(a)) {
@@ -12,11 +12,9 @@ if (a === '' || a === null) {
 } else if (a <= 0) {
     console.log('Phải nhập số lớn hơn 0');
     check = false;
-} else {
-    a = Number(a);
 }
 
-if (b === '' || b === null) {
+if (b == '' || b == null) {
     console.log("Vui lòng nhập!");
     check = false;
 } else if (isNaN(b)) {
@@ -25,11 +23,9 @@ if (b === '' || b === null) {
 } else if (b <= 0) {
     console.log('Phải nhập số lớn hơn 0');
     check = false;
-} else {
-    b = Number(b);
 }
 
-if (c === '' || c === null) {
+if (c == '' || c == null) {
     console.log("Vui lòng nhập!");
     check = false;
 } else if (isNaN(c)) {
@@ -38,17 +34,15 @@ if (c === '' || c === null) {
 } else if (c <= 0) {
     console.log('Phải nhập số lớn hơn 0');
     check = false;
-} else {
-    c = Number(c);
 }
 
 if (check) {
-    if (a + b > c && b + c > a && a + c > b) {
-        if (a === b && b === c) {
+    if (Number(a) + Number(b) > c && Number(b) + Number(c) > a && Number(a) + Number(c) > b) {
+        if (a == b && b == c) {
             console.log('Tam giác đều');
-        } else if (a === b || b === c || a === c) {
+        } else if (a == b || b == c || a == c) {
             console.log('Tam giác cân');
-        } else if (a * a === b * b + c * c || b * b === a * a + c * c || c * c === a * a + b * b) {
+        } else if (a * a == b * b + c * c || b * b == a * a + c * c || c * c == a * a + b * b) {
             console.log('Tam giác vuông');
         } else {
             console.log('Tam giác thường');
