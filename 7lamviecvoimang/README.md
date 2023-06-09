@@ -34,7 +34,7 @@
 8. Thoát
 ---------------------------------------
 
-- Khi chọn 1: Gọi hàm nhập mảng
+- Khi chọn 1: Gọi hàm tạo mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99
 - Khi chọn 2: Gọi hàm xuất mảng
 - Khi chọn 3. In các số nguyên tố trong mảng
 - Khi chọn 4. In các số hoàn hảo trong mảng

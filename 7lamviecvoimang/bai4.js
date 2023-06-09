@@ -45,13 +45,18 @@ console.log(arrayNumber);
 
 var input = prompt('Nhập số muốn tìm: ');
 
-if (search(Number(input), arrayNumber)) {
-    console.log('Có tìm thấy số ' + input + ' trong mảng');
-} else {
-    console.log('Không tìm thấy!');
-}
+// if (search(Number(input), arrayNumber)) {
+//     console.log('Có tìm thấy số ' + input + ' trong mảng');
+// } else {
+//     console.log('Không tìm thấy!');
+// }
 
-var idx = searchIndex(Number(input), arrayNumber);
+// var idx = searchIndex(Number(input), arrayNumber);
+// if (idx !== -1) {
+//     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
+// }
+
+var idx = arrayNumber.indexOf(Number(input));
 if (idx !== -1) {
     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
 }

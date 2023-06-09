@@ -1,7 +1,7 @@
 var check = true;
 var chieuDai = prompt("Nhập chiều dài: ");
 
-if (chieuDai === '' || chieuDai === null) {
+if (chieuDai == '' || chieuDai == null) {
     console.log("Vui lòng nhập chiều dài!");
     check = false;
 } else if (isNaN(chieuDai)) {
@@ -10,13 +10,11 @@ if (chieuDai === '' || chieuDai === null) {
 } else if (chieuDai <= 0) {
     console.log('Chiều dài phải lớn hơn 0');
     check = false;
-} else {
-    chieuDai = Number(chieuDai);
 }
 
 var chieuRong = prompt("Nhập chiều rộng: ");
 
-if (chieuRong === '' || chieuRong === null) {
+if (chieuRong == '' || chieuRong == null) {
     console.log("Vui lòng nhập chiều rộng!");
     check = false;
 } else if (isNaN(chieuRong)) {
@@ -25,13 +23,11 @@ if (chieuRong === '' || chieuRong === null) {
 } else if (chieuRong <= 0) {
     console.log('Chiều rộng phải lớn hơn 0');
     check = false;
-} else {
-    chieuRong = Number(chieuRong);
 }
 
 if (check) {
 
-    var chuVi = (chieuDai + chieuRong) * 2;
+    var chuVi = (Number(chieuDai) + Number(chieuRong)) * 2;
     var dienTich = chieuDai * chieuRong;
 
     console.log("Chu vi: " + chuVi);
