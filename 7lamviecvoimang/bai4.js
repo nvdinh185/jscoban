@@ -6,7 +6,7 @@ function getRandomInt(max) {
 // Hàm tìm chỉ số của một số trong mảng
 function searchIndex(number, array) {
     for (let i = 0; i < array.length; i++) {
-        if (array[i] === number) return i;
+        if (array[i] == number) return i;
     }
     return -1;
 }
@@ -30,8 +30,8 @@ function bubbleSort(array) {
 
 // Hàm tìm một số trong mảng
 function search(number, array) {
-    for (let n of array) {
-        if (n === number) return n;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == number) return array[i];
     }
 }
 
@@ -45,21 +45,21 @@ console.log(arrayNumber);
 
 var input = prompt('Nhập số muốn tìm: ');
 
-// if (search(Number(input), arrayNumber)) {
-//     console.log('Có tìm thấy số ' + input + ' trong mảng');
-// } else {
-//     console.log('Không tìm thấy!');
-// }
+if (search(input, arrayNumber)) {
+    console.log('Có tìm thấy số ' + input + ' trong mảng');
+} else {
+    console.log('Không tìm thấy!');
+}
 
-// var idx = searchIndex(Number(input), arrayNumber);
-// if (idx !== -1) {
-//     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
-// }
-
-var idx = arrayNumber.indexOf(Number(input));
-if (idx !== -1) {
+var idx = searchIndex(input, arrayNumber);
+if (idx != -1) {
     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
 }
+
+// var idx = arrayNumber.indexOf(Number(input));
+// if (idx != -1) {
+//     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
+// }
 
 bubbleSort(arrayNumber);// gọi hàm sắp xếp mảng theo thứ tự tăng dần
 console.log(arrayNumber);

@@ -8,17 +8,17 @@ function nhapMang(array, n) {
 
 // Hàm xuất mảng ra màn hình console
 function xuatMang(array) {
-    for (var el of array) {
-        console.log(el);
+    for (var i = 0; i < array.length; i++) {
+        console.log(array[i]);
     }
 }
 
 // Hàm tìm số lớn nhất trong mảng
 function timMax(array) {
     var max = array[0];
-    for (var el of array) {
-        if (el > max) {
-            max = el;
+    for (var i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
         }
     }
     return max;
@@ -27,9 +27,9 @@ function timMax(array) {
 // Hàm tìm số nhỏ nhất trong mảng
 function timMin(array) {
     var min = array[0];
-    for (var el of array) {
-        if (el < min) {
-            min = el;
+    for (var i = 1; i < array.length; i++) {
+        if (array[i] < min) {
+            min = array[i];
         }
     }
     return min;
@@ -38,8 +38,8 @@ function timMin(array) {
 // Hàm tính tổng các phần tử trong mảng
 function sumArray(array) {
     var sum = 0;
-    for (var el of array) {
-        sum += Number(el);
+    for (i = 0; i < array.length; i++) {
+        sum += Number(array[i]);
     }
     return sum;
 }

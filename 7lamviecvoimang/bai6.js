@@ -15,8 +15,8 @@ function taoMang(array) {
 // Hàm xuất mảng ra màn hình console
 function xuatMang(array) {
     console.log('== XUẤT MẢNG ==');
-    for (var el of array) {
-        console.log(el);
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
     }
 }
 

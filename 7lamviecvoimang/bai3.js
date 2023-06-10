@@ -6,7 +6,7 @@ function getRandomInt(max) {
 // Hàm kiểm tra số nguyên tố
 function soNguyenTo(n) {
     for (var i = 2; i < n; i++) {
-        if (n % i === 0) return false;
+        if (n % i == 0) return false;
     }
     return true;
 }
@@ -15,17 +15,17 @@ function soNguyenTo(n) {
 function soHoanHao(n) {
     var sum = 0;
     for (var i = 1; i < n; i++) {
-        if (n % i === 0) sum += i;
+        if (n % i == 0) sum += i;
     }
-    if (sum === n) return true;
+    if (sum == n) return true;
     return false;
 }
 
 // Hàm đếm số lầm xuất hiện một số trong mảng
 function count(number, array) {
     var count = 0;
-    for (var n of array) {
-        if (n === number) count++;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == number) count++;
     }
     return count;
 }
@@ -33,8 +33,8 @@ function count(number, array) {
 // Hàm đếm số nguyên tố trong mảng
 function countSNT(array) {
     var count = 0;
-    for (var n of array) {
-        if (soNguyenTo(n)) count++;
+    for (var i = 0; i < array.length; i++) {
+        if (soNguyenTo(array[i])) count++;
     }
     return count;
 }
@@ -42,8 +42,8 @@ function countSNT(array) {
 // Hàm đếm số hoàn hảo trong mảng
 function countSHH(array) {
     var count = 0;
-    for (var n of array) {
-        if (soHoanHao(n)) count++;
+    for (var i = 0; i < array.length; i++) {
+        if (soHoanHao(array[i])) count++;
     }
     return count;
 }
