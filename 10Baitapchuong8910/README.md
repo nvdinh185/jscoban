@@ -1,6 +1,21 @@
 # BÀI TẬP ĐỂ ÁP DỤNG HÀM, VÒNG LẶP ĐỐI VỚI MẢNG CÁC OBJECT
 
-## Bài tập 1: Cho mảng sinh viên gồm các thông tin như sau:
+## Bài tập 1: Viết chương trình mô phỏng từ điển Anh Việt
+
+Tạo menu chương trình như sau:
+--------------------------------------
+== TỪ ĐIỂN ANH VIỆT ==
+1. Nhập dữ liệu
+2. Xuất dữ liệu
+3. Dịch từ
+4. Thoát
+--------------------------------------
+- Khi chọn 1: Nhập thông tin các từ (gồm 2 thuộc tính: từ tiếng Anh và nghĩa tiếng Việt) từ bàn phím.
+- Khi chọn 2: Hiển thị thông tin các từ đã nhập.
+- Khi chọn 3: Nhập vào một từ tiếng Anh bất kỳ, tìm kiếm trong từ điển, nếu có thì in nghĩa tiếng Việt của từ đó. Nếu không có thì in ra không tìm thấy.
+- Khi chọn 4: Thoát khỏi chương trình và in ra dòng chữ "Cảm ơn đã sử dụng từ điển!"
+
+## Bài tập 2: Cho mảng sinh viên gồm các thông tin như sau:
 
 ```js
 const students = [
@@ -54,22 +69,6 @@ Tạo menu chương trình như sau:
 - Khi chọn 2: Nhập mới 1 sinh viên và thêm vào danh sách.
 - Khi chọn 3: Sửa 1 sinh viên trong danh sách theo id nhập vào.
 - Khi chọn 4: Xóa 1 sinh viên trong danh sách theo id nhập vào.
-
-
-## Bài tập 2: Viết chương trình mô phỏng từ điển Anh Việt
-
-Tạo menu chương trình như sau:
---------------------------------------
-== TỪ ĐIỂN ANH VIỆT ==
-1. Nhập dữ liệu
-2. Xuất dữ liệu
-3. Dịch từ
-4. Thoát
---------------------------------------
-- Khi chọn 1: Nhập thông tin các từ (gồm 2 thuộc tính: từ tiếng Anh và nghĩa tiếng Việt) từ bàn phím.
-- Khi chọn 2: Hiển thị thông tin các từ đã nhập.
-- Khi chọn 3: Nhập vào một từ tiếng Anh bất kỳ, tìm kiếm trong từ điển, nếu có thì in nghĩa tiếng Việt của từ đó. Nếu không có thì in ra không tìm thấy.
-- Khi chọn 4: Thoát khỏi chương trình và in ra dòng chữ "Cảm ơn đã sử dụng từ điển!"
 
 ## Bài tập 3: Cho danh sách các đội bóng tham dự World Cup như sau:
 

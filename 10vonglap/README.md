@@ -43,4 +43,4 @@ const students = [
 
 Viết chương trình in mảng các sinh viên theo định dạng sau (dùng for of và for in)
 
-![alt text](for.jpg)
+![](for.jpg)

@@ -23,7 +23,8 @@ const menu = `1. Nhập dữ liệu
 2. Xuất dữ liệu
 3. Tìm thông tin
 4. Xóa thông tin đội bóng
-5. Thoát
+5. In những đội bóng có số lần vô địch lớn hơn 5
+6. Thoát
 
 Nhập thao tác lựa chọn:`;
 
@@ -37,6 +38,8 @@ do {
         tim();
     } else if (input == 4) {
         xoa();
+    } else if (input == 5) {
+        inThongTin();
     } else {
         console.log('Goodbye!');
         break;
@@ -88,6 +91,19 @@ function xoa() {
         danhSachDoiBong.splice(idx, 1);
     } else {
         console.log('Không tìm thấy!');
+    }
+}
+
+// 5. In những đội bóng có số lần vô địch lớn hơn 5
+function inThongTin() {
+    console.log('THÔNG TIN ĐỘI BÓNG CÓ SỐ LẦN VÔ ĐỊCH LỚN HƠN 5');
+    for (const el of danhSachDoiBong) {
+        if (el.soLanVoDich > 5) {
+            for (const key in el) {
+                console.log(key + ": " + el[key]);
+            }
+            console.log("================");
+        }
     }
 }
 
