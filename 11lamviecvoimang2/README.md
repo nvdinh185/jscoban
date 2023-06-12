@@ -43,9 +43,9 @@ var students = [
 ```
 
 - Thêm các thuộc tính điểm Toán, điểm Lý, điểm Hóa để lưu thông tin điểm thi cho các sinh viên là các số ngẫu nhiên từ 0 đến 10
-- Hiển thị các sinh viên trong danh sách như sau:
+- Hiển thị các sinh viên trong danh sách như sau: (Dùng forEach và map rồi so sánh 2 cách)
 
-![alt text](image.jpg)
+![](image.jpg)
 
 ## Bài tập 2: Cho mảng sinh viên như sau:
 
@@ -181,4 +181,4 @@ const classList = [
 
 Hãy hiển thị danh sách sinh viên thuộc lớp CNTT theo dạng bảng gồm các thông tin: id, studentName, className
 
-![alt text](image2.jpg)
+![](image2.jpg)

@@ -209,7 +209,7 @@ const students = [
 ];
 ```
 
-- Viết chương trình (sử dụng function, vòng lặp for, switch...case) để xử lý các công việc sau:
+- Viết chương trình (sử dụng function, vòng lặp (for, while), switch...case) để xử lý các công việc sau:
 
 1. Kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không? (biết điểm trung bình là 5)
 

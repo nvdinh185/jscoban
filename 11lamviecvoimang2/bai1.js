@@ -36,12 +36,20 @@ var students = [
     }
 ];
 
-students = students.map(function (student) {
+// Cách 1: Dùng for each
+students.forEach(function (student) {
     student.toan = Math.floor(Math.random() * 11);
     student.ly = Math.floor(Math.random() * 11);
     student.hoa = Math.floor(Math.random() * 11);
-    return student;
 });
+
+// Cách 2: Dùng map
+// students = students.map(function (student) {
+//     student.toan = Math.floor(Math.random() * 11);
+//     student.ly = Math.floor(Math.random() * 11);
+//     student.hoa = Math.floor(Math.random() * 11);
+//     return student;
+// });
 console.log("=== DANH SÁCH SINH VIÊN ===");
 for (const el of students) {
     for (const key in el) {
