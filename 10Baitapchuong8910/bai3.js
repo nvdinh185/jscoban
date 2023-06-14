@@ -9,7 +9,7 @@ const danhSachDoiBong = [
         id: '2',
         ten: 'Đức',
         huanLuyenVien: 'Hansi Flick',
-        soLanVoDich: 10
+        soLanVoDich: 4
     },
     {
         id: '3',

@@ -101,14 +101,16 @@ Tạo menu như sau:
 2. Xuất dữ liệu
 3. Tìm thông tin
 4. Xóa thông tin đội bóng
-5. Thoát
+5. In những đội bóng có số lần vô địch lớn hơn 5
+6. Thoát
 ---------------------------------------
 
 - Khi chọn 1: Nhập đội bóng tham gia World Cup.
 - Khi chọn 2: Hiển thị thông tin các đội bóng đã nhập
 - Khi chọn 3: Nhập vào id và hiển thị thông tin đội bóng có id đó. Nếu không có thì thông báo "Không tìm thấy"
 - Khi chọn 4: Nhập vào id và xóa thông tin đội bóng có id đó. Nếu không có thì thông báo "Không tìm thấy đội bóng nào để xóa".
-- Khi chọn 0: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
+- Khi chọn 5: In thông tin những đội bóng có số lần vô địch lớn hơn 5
+- Khi chọn 6: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
 
 ## Bài tập 4: Cho danh sách các quân bài như sau:
 

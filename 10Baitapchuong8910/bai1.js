@@ -22,8 +22,10 @@ do {
             for (var el of arrWords) {
                 if (el.eng === eng) {
                     check = true;
+                    break;
                 }
             }
+            // Nếu chưa có thì mới thêm vào
             if (!check) {
                 var vie = prompt("Nhập nghĩa tiếng Việt: ");
                 var newWord = {
@@ -52,7 +54,9 @@ do {
             if (!searchWord) {
                 alert("Không tìm thấy!");
             } else {
-                console.log(searchWord);
+                for (const key in searchWord) {
+                    console.log(key + ": " + searchWord[key]);
+                }
             }
             break;
         case '4':
