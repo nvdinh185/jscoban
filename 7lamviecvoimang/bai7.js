@@ -6,6 +6,20 @@ function nhapMang(array, n) {
     }
 }
 
+// Hàm kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không? (dùng every)
+function checkEvery(array) {
+    return array.every(function (el) {
+        return el >= 5;
+    });
+}
+
+// Hàm kiểm tra xem thử có phần tử nào đều lớn hơn 5 không? (dùng some)
+function checkSome(array) {
+    return array.some(function (el) {
+        return el >= 5;
+    });
+}
+
 // Hàm nhân 3 giá trị mỗi phần tử trong mảng (dùng map)
 function triple(array) {
     return array.map(function (el) {
@@ -44,3 +58,9 @@ xuatMang(arNum);
 
 // gọi hàm tính tổng các phần tử trong mảng
 console.log(sumArray(arNum));
+
+// gọi hàm kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không?
+console.log(checkEvery(arNum));
+
+// gọi hàm kiểm tra xem thử có phần tử nào đều lớn hơn 5 không?
+console.log(checkSome(arNum));
