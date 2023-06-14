@@ -18,15 +18,26 @@ do {
             break;
         case '1':
             var eng = prompt("Nhập từ tiếng Anh: ");
-            var vie = prompt("Nhập nghĩa tiếng Việt: ");
-            var newWord = {
-                eng: eng,
-                vie: vie
+            var check = false;
+            for (var el of arrWords) {
+                if (el.eng === eng) {
+                    check = true;
+                }
+            }
+            if (!check) {
+                var vie = prompt("Nhập nghĩa tiếng Việt: ");
+                var newWord = {
+                    eng: eng,
+                    vie: vie
+                }
+                arrWords.push(newWord);
+            } else {
+                alert('Từ này đã có trong từ điển!');
             }
 
-            arrWords.push(newWord);
             break;
         case '2':
+            console.log('== DANH SÁCH CÁC TỪ ==');
             for (const el of arrWords) {
                 for (const key in el) {
                     console.log(key + ": " + el[key]);
