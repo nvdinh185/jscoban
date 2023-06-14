@@ -133,3 +133,9 @@ var arrNumber = ['111', '222', '333', '444']
 - Khi chọn 4: Gọi hàm sắp xếp các phần tử của mảng theo thứ tự tăng dần
 - Khi chọn 5: Gọi hàm nhập 1 số bất kỳ rồi tìm số đó trong mảng, nếu có thì in chỉ số của phần tử tìm thấy, nếu không thì in "Không tìm thấy"
 - Khi chọn 6: Thoát khỏi chương trình
+
+## Bài 7: Viết chương trình có sử dụng hàm
+1. nhập 1 mảng
+2. nhân 3 giá trị mỗi phần tử trong mảng (dùng map)
+3. xuất mảng mới ra màn hình.
+4. tính tổng các phần tử trong mảng (dùng reduce)
