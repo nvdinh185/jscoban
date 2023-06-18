@@ -227,6 +227,4 @@ const students = [
 
 7. Tính tổng điểm của các sinh viên
 
-8. Tính điểm trung bình của các sinh viên (làm tròn 2 chữ số thập phân)
-
-9. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần

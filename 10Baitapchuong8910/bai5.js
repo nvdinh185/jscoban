@@ -61,9 +61,8 @@ function showMenu() {
 5. cộng cho mỗi sinh viên 1 điểm toán
 6. thêm thuộc tính tổng điểm 3 môn
 7. tính tổng điểm của các sinh viên
-8. tính điểm trung bình của các sinh viên
-9. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
-10. Thoát
+8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+9. Thoát
 
 Nhập thao tác lựa chọn:`;
     var options = prompt(menu);
@@ -93,7 +92,8 @@ function main(options) {
             showMenu();
             break;
         case '3':
-            display(filterGoodStudents(students));
+            var listGoodStudents = filterGoodStudents(students);
+            display(listGoodStudents);
             showMenu();
             break;
         case '4':
@@ -115,15 +115,11 @@ function main(options) {
             showMenu();
             break;
         case '8':
-            console.log("Điểm trung bình của các sinh viên: ", (countTotalScore(students) / students.length).toFixed(2));
-            showMenu();
-            break;
-        case '9':
             sortStudents(students);
             display(students);
             showMenu();
             break;
-        case '10':
+        case '9':
             exit();
             break;
         default:
