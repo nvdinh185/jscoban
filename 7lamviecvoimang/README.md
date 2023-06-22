@@ -139,3 +139,5 @@ var arrNumber = ['111', '222', '333', '444']
 2. nhân 3 giá trị mỗi phần tử trong mảng (dùng map)
 3. xuất mảng mới ra màn hình.
 4. tính tổng các phần tử trong mảng (dùng reduce)
+5. kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không?
+6. kiểm tra xem thử có phần tử nào đều lớn hơn 5 không?
