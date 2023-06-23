@@ -189,4 +189,4 @@ Hãy hiển thị danh sách sinh viên thuộc lớp CNTT theo dạng bảng g�
 3. xuất mảng mới ra màn hình.
 4. tính tổng các phần tử trong mảng (dùng reduce)
 5. kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không? (dùng every)
-6. kiểm tra xem thử có phần tử nào đều lớn hơn 5 không? (dùng some)
+6. kiểm tra xem thử có phần tử nào lớn hơn 5 không? (dùng some)
