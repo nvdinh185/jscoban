@@ -45,22 +45,9 @@ const classList = [
     }
 ]
 
-function getClassByIds(classIds) {
-    return classList.filter(function (el) {
-        return classIds.includes(el.id);
-    })
-}
-
-const classIds = students.map(function (student) {
-    return student.classId;
-})
-
-const classByIds = getClassByIds(classIds);
-// console.log(classByIds);
-
 const ITStudents = [];
 students.forEach(function (student) {
-    const classInfo = classByIds.find(function (el) {
+    const classInfo = classList.find(function (el) {
         return el.id === student.classId;
     })
     if (classInfo.id === 1) {

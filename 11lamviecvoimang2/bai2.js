@@ -88,7 +88,7 @@ do {
             console.table(listGoods);
             break;
         case '4':
-            console.log(findGoodStudent(students));
+            console.table(findGoodStudent(students));
             break;
         case '5':
             addOneMath(students);
