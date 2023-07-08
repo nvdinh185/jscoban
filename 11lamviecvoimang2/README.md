@@ -111,10 +111,9 @@ Tạo menu như sau:
 4. Tìm 1 sinh viên xếp loại giỏi
 5. Cộng cho mỗi sinh viên 1 điểm toán
 6. Thêm thuộc tính tổng điểm 3 môn
-7. Tính tổng điểm của các sinh viên
-8. Tính điểm trung bình của các sinh viên
-9. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
-10. Thoát
+7. Tính tổng điểm của tất cả các sinh viên
+8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+9. Thoát
 ---------------------------------------
 
 - Khi chọn 1: Duyệt mảng và kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không?
@@ -123,10 +122,9 @@ Tạo menu như sau:
 - Khi chọn 4: Tìm 1 sinh viên xếp loại giỏi và hiển thị
 - Khi chọn 5: Cộng cho mỗi sinh viên 1 điểm toán
 - Khi chọn 6: Thêm thuộc tính sum để lưu tổng điểm 3 môn
-- Khi chọn 7: Tính tổng điểm của các sinh viên
-- Khi chọn 8: Tính điểm trung bình của các sinh viên
-- Khi chọn 9: Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
-- Khi chọn 10: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
+- Khi chọn 7: Tính tổng điểm của tất cả các sinh viên
+- Khi chọn 8: Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
+- Khi chọn 9: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
 
 ## Bài 3: Cho mảng sinh viên và mảng danh sách lớp như sau:
 

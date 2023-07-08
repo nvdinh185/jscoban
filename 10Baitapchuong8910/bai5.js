@@ -60,7 +60,7 @@ function showMenu() {
 4. tìm 1 sinh viên xếp loại giỏi
 5. cộng cho mỗi sinh viên 1 điểm toán
 6. thêm thuộc tính tổng điểm 3 môn
-7. tính tổng điểm của các sinh viên
+7. tính tổng điểm của tất cả các sinh viên
 8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
 9. Thoát
 
@@ -111,7 +111,7 @@ function main(options) {
             showMenu();
             break;
         case '7':
-            console.log("Tổng điểm của các sinh viên: ", countTotalScore(students));
+            console.log("Tổng điểm của tất cả các sinh viên: ", countTotalScore(students));
             showMenu();
             break;
         case '8':
@@ -182,7 +182,7 @@ function addPropertySum(arrStudents) {
     }
 }
 
-// 7. Hàm tính tổng điểm của các sinh viên
+// 7. Hàm tính tổng điểm của tất cả các sinh viên
 function countTotalScore(arrStudents) {
     var sum = 0;
     for (const student of arrStudents) {

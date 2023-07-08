@@ -225,6 +225,6 @@ const students = [
 
 6. Thêm thuộc tính tổng điểm 3 môn
 
-7. Tính tổng điểm của các sinh viên
+7. Tính tổng điểm của tất cả các sinh viên
 
 8. Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
