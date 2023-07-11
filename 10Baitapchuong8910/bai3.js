@@ -21,10 +21,11 @@ const danhSachDoiBong = [
 
 const menu = `1. Nhập dữ liệu
 2. Xuất dữ liệu
-3. Tìm thông tin
-4. Xóa thông tin đội bóng
-5. In những đội bóng có số lần vô địch lớn hơn 5
-6. Thoát
+3. Sửa dữ liệu
+4. Tìm thông tin
+5. Xóa thông tin đội bóng
+6. In những đội bóng có số lần vô địch lớn hơn 5
+7. Thoát
 
 Nhập thao tác lựa chọn:`;
 
@@ -35,10 +36,12 @@ do {
     } else if (input == 2) {
         display();
     } else if (input == 3) {
-        tim();
+        sua();
     } else if (input == 4) {
-        xoa();
+        tim();
     } else if (input == 5) {
+        xoa();
+    } else if (input == 6) {
         inThongTin();
     } else {
         console.log('Goodbye!');
@@ -72,7 +75,33 @@ function display() {
     }
 }
 
-// 3. Tìm đội bóng
+function sua() {
+    var idEdit = prompt("Nhập mã đội bóng muốn sửa: ");
+
+    // Tìm chỉ số của đội bóng muốn sửa
+    var editIndex = searchIndex(idEdit, danhSachDoiBong);
+
+    if (editIndex == -1) {
+        alert("Không tìm thấy đội bóng muốn sửa!");
+    } else {
+        // Lấy thông tin sinh viên muốn sửa
+        var editItem = search(idEdit, danhSachDoiBong);
+
+        var tenMoi = prompt("Nhập tên đội bóng muốn sửa: ", editItem.ten);
+        var huanLuyenVienMoi = prompt("Nhập huấn luyện viên muốn sửa: ", editItem.huanLuyenVien);
+        var soLanVoDichMoi = prompt("Nhập huấn luyện viên muốn sửa: ", editItem.soLanVoDich);
+
+        var editDB = {
+            id: idEdit,
+            ten: tenMoi,
+            huanLuyenVien: huanLuyenVienMoi,
+            soLanVoDich: soLanVoDichMoi
+        }
+        danhSachDoiBong.splice(editIndex, 1, editDB);
+    }
+}
+
+// 4. Tìm đội bóng
 function tim() {
     var id = prompt('Nhập id đội bóng muốn tìm: ');
     var doiBong = search(id, danhSachDoiBong);
@@ -83,7 +112,7 @@ function tim() {
     }
 }
 
-// 4. Xóa đội bóng
+// 5. Xóa đội bóng
 function xoa() {
     var id = prompt('Nhập id đội bóng muốn xóa: ');
     var idx = searchIndex(id, danhSachDoiBong);
@@ -94,7 +123,7 @@ function xoa() {
     }
 }
 
-// 5. In những đội bóng có số lần vô địch lớn hơn 5
+// 6. In những đội bóng có số lần vô địch lớn hơn 5
 function inThongTin() {
     console.log('THÔNG TIN ĐỘI BÓNG CÓ SỐ LẦN VÔ ĐỊCH LỚN HƠN 5');
     for (const el of danhSachDoiBong) {
