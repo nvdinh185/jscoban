@@ -75,6 +75,7 @@ function display() {
     }
 }
 
+// 3. Sửa đội bóng
 function sua() {
     var idEdit = prompt("Nhập mã đội bóng muốn sửa: ");
 
@@ -89,7 +90,7 @@ function sua() {
 
         var tenMoi = prompt("Nhập tên đội bóng muốn sửa: ", editItem.ten);
         var huanLuyenVienMoi = prompt("Nhập huấn luyện viên muốn sửa: ", editItem.huanLuyenVien);
-        var soLanVoDichMoi = prompt("Nhập huấn luyện viên muốn sửa: ", editItem.soLanVoDich);
+        var soLanVoDichMoi = prompt("Nhập số lần vô địch muốn sửa: ", editItem.soLanVoDich);
 
         var editDB = {
             id: idEdit,
