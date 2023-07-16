@@ -49,13 +49,13 @@ do {
     var input = prompt(menu);
 
     if (input == 1) {
-        display(students);
+        display();
     } else if (input == 2) {
-        addStudent(students);
+        addStudent();
     } else if (input == 3) {
-        editStudent(students);
+        editStudent();
     } else if (input == 4) {
-        deleteStudent(students);
+        deleteStudent();
     } else {
         console.log("Good bye!");
         break;
@@ -63,7 +63,7 @@ do {
 } while (true);
 
 // Thêm sinh viên
-function addStudent(arrStudents) {
+function addStudent() {
     var id = prompt("Nhập mã sinh viên: ");
     var newName = prompt("Nhập tên sinh viên: ");
     var newAddress = prompt("Nhập địa chỉ: ");
@@ -72,22 +72,21 @@ function addStudent(arrStudents) {
         name: newName,
         address: newAddress
     }
-
-    arrStudents.push(newStudent);
+    students.push(newStudent);
 }
 
 // Sửa sinh viên
-function editStudent(arrStudents) {
+function editStudent() {
     var idEdit = prompt("Nhập mã sinh viên muốn sửa: ");
 
     // Tìm chỉ số của sinh viên muốn sửa
-    var editIndex = searchIndex(idEdit, arrStudents);
+    var editIndex = searchIndex(idEdit, students);
 
     if (editIndex == -1) {
         alert("Không tìm thấy sinh viên muốn sửa!");
     } else {
         // Lấy thông tin sinh viên muốn sửa
-        var editStudent = search(idEdit, arrStudents);
+        var editStudent = search(idEdit, students);
 
         var nameEdit = prompt("Nhập tên sinh viên muốn sửa: ", editStudent.name);
         var addressEdit = prompt("Nhập địa chỉ sinh viên muốn sửa: ", editStudent.address);
@@ -97,19 +96,19 @@ function editStudent(arrStudents) {
             name: nameEdit,
             address: addressEdit
         }
-        arrStudents.splice(editIndex, 1, student);
+        students.splice(editIndex, 1, student);
     }
 }
 
 // Xóa sinh viên
-function deleteStudent(arrStudents) {
+function deleteStudent() {
     var idDel = prompt("Nhập mã sinh viên muốn xóa: ");
 
     // Tìm chỉ số của sinh viên muốn xóa
-    var delIndex = searchIndex(idDel, arrStudents);
+    var delIndex = searchIndex(idDel, students);
 
     if (delIndex != -1) {
-        arrStudents.splice(delIndex, 1);
+        students.splice(delIndex, 1);
         alert("Đã xóa thành công sinh viên có mã " + idDel);
     } else {
         alert("Không tìm thấy sinh viên muốn xóa!");
@@ -132,9 +131,9 @@ function search(id, array) {
 }
 
 // Hàm hiển thị danh sách sinh viên
-function display(arrStudents) {
+function display() {
     console.log('===DANH SÁCH SINH VIÊN===');
-    for (const el of arrStudents) {
+    for (const el of students) {
         for (const key in el) {
             console.log(key + ": " + el[key]);
         }
