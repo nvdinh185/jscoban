@@ -1,6 +1,14 @@
 # BÀI TẬP ĐỂ ÁP DỤNG CÁC HÀM forEach, every, some, filter, find, map, reduce:
 
-## Bài 1: Cho mảng sinh viên gồm các thông tin sau:
+## Bài 1: Viết chương trình có sử dụng hàm
+1. nhập 1 mảng các số nguyên
+2. nhân 3 giá trị mỗi phần tử trong mảng (dùng map)
+3. xuất mảng mới ra màn hình.
+4. tính tổng các phần tử trong mảng (dùng reduce)
+5. kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không? (dùng every)
+6. kiểm tra xem thử có phần tử nào lớn hơn 5 không? (dùng some)
+
+## Bài 2: Cho mảng sinh viên gồm các thông tin sau:
 
 ```js
 var students = [
@@ -47,7 +55,7 @@ var students = [
 
 ![](image.jpg)
 
-## Bài 2: Cho mảng sinh viên như sau:
+## Bài 3: Cho mảng sinh viên như sau:
 
 ```js
 const students = [
@@ -126,7 +134,7 @@ Tạo menu như sau:
 - Khi chọn 8: Sắp xếp danh sách sinh viên theo tổng điểm tăng dần
 - Khi chọn 9: Thoát khỏi hệ thống và in ra dòng chữ: "Goodbye!"
 
-## Bài 3: Cho mảng sinh viên và mảng danh sách lớp như sau:
+## Bài 4: Cho mảng sinh viên và mảng danh sách lớp như sau:
 
 ```js
 const students = [
@@ -180,11 +188,3 @@ const classList = [
 Hãy hiển thị danh sách sinh viên thuộc lớp CNTT theo dạng bảng gồm các thông tin: id, studentName, className
 
 ![](image2.jpg)
-
-## Bài 4: Viết chương trình có sử dụng hàm
-1. nhập 1 mảng các số nguyên
-2. nhân 3 giá trị mỗi phần tử trong mảng (dùng map)
-3. xuất mảng mới ra màn hình.
-4. tính tổng các phần tử trong mảng (dùng reduce)
-5. kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không? (dùng every)
-6. kiểm tra xem thử có phần tử nào lớn hơn 5 không? (dùng some)
