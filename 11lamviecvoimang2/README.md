@@ -185,6 +185,6 @@ const classList = [
 ]
 ```
 
-Hãy hiển thị danh sách sinh viên thuộc lớp CNTT theo dạng bảng gồm các thông tin: id, studentName, className
+Hãy hiển thị danh sách sinh viên thuộc lớp CNTT theo dạng bảng gồm các thông tin: id, studentName, className (dùng console.table)
 
 ![](image2.jpg)
