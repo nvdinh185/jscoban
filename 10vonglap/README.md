@@ -6,7 +6,7 @@
 
 ## Bài 3: Viết chương trình in ra các số là bội của 3 trong khoảng từ 1 đến 50
 
-## Bài 4: Viết chương trình nhập 2 số a, b (a < b). In ra các số là ước của 12 trong khoảng a, b
+## Bài 4: Viết chương trình nhập 2 số a, b (a < b). In ra các số là ước của b trong khoảng a, b
 
 ## Bài 5: Viết chương trình nhập 1 số và in ra các ước của số đó
 
