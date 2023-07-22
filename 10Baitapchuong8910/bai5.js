@@ -50,9 +50,7 @@ const students = [
     }
 ];
 
-showMenu();
-function showMenu() {
-    const menu = `=== QUẢN LÝ SINH VIÊN ===
+const menu = `=== QUẢN LÝ SINH VIÊN ===
 0. làm sạch giao diện cosole.log
 1. kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không?
 2. kiểm tra xem có sinh viên nào xếp loại giỏi không?
@@ -65,15 +63,14 @@ function showMenu() {
 9. Thoát
 
 Nhập thao tác lựa chọn:`;
-    var options = prompt(menu);
-    main(options);
-}
 
-function main(options) {
-    switch (options) {
+var check = true;
+do {
+    var input = prompt(menu);
+
+    switch (input) {
         case '0':
             console.clear();
-            showMenu();
             break;
         case '1':
             if (isUpNormal(students)) {
@@ -81,7 +78,6 @@ function main(options) {
             } else {
                 console.log('Không phải tất cả sinh viên đều có các môn trên điểm trung bình');
             }
-            showMenu();
             break;
         case '2':
             if (haveGoodStudent(students)) {
@@ -89,44 +85,37 @@ function main(options) {
             } else {
                 console.log('không có sinh viên nào xếp loại giỏi');
             }
-            showMenu();
             break;
         case '3':
             var listGoodStudents = filterGoodStudents(students);
             display(listGoodStudents);
-            showMenu();
             break;
         case '4':
             console.log(findGoodStudent(students));
-            showMenu();
             break;
         case '5':
             addOneMath(students);
             display(students);
-            showMenu();
             break;
         case '6':
             addPropertySum(students);
             display(students);
-            showMenu();
             break;
         case '7':
             console.log("Tổng điểm của tất cả các sinh viên: ", countTotalScore(students));
-            showMenu();
             break;
         case '8':
             sortStudents(students);
             display(students);
-            showMenu();
             break;
         case '9':
             exit();
+            check = false;
             break;
         default:
             alert("Vui lòng nhập đúng thao tác lựa chọn!");
-            showMenu();
     }
-}
+} while (check);
 
 // 1. Hàm kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không? (biết điểm trung bình là 5)
 function isUpNormal(arrStudents) {
