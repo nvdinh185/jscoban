@@ -47,20 +47,50 @@ function xuatMang(array) {
 }
 
 var arNum = [];
-// goi hàm nhập 1 mảng
-nhapMang(arNum, 2);
 
-// gọi hàm nhân 3 giá trị mỗi phần tử trong mảng
-arNum = triple(arNum);
+var menu = ` == CHỌN CHỨC NĂNG ==
+1. Nhập mảng các số
+2. Nhân 3 giá trị mỗi phần tử
+3. Xuất mảng
+4. Tính tổng các phần tử trong mảng
+5. Kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không?
+6. Kiểm tra xem thử có phần tử nào đều lớn hơn 5 không?
+7. Thoát
 
-// gọi hàm xuất mảng
-xuatMang(arNum);
+Nhập thao tác lựa chọn:
+`
+var check = true;
+do {
+    var input = prompt(menu);
 
-// gọi hàm tính tổng các phần tử trong mảng
-console.log(sumArray(arNum));
-
-// gọi hàm kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không?
-console.log(checkEvery(arNum));
-
-// gọi hàm kiểm tra xem thử có phần tử nào đều lớn hơn 5 không?
-console.log(checkSome(arNum));
+    switch (input) {
+        case '1':
+            var n = prompt('Nhập số lượng phần tử: ');
+            // goi hàm nhập 1 mảng
+            nhapMang(arNum, n);
+            break;
+        case '2':
+            // gọi hàm nhân 3 giá trị mỗi phần tử trong mảng
+            arNum = triple(arNum);
+            break;
+        case '3':
+            // gọi hàm xuất mảng
+            xuatMang(arNum);
+            break;
+        case '4':
+            // gọi hàm tính tổng các phần tử trong mảng
+            console.log(sumArray(arNum));
+            break;
+        case '5':
+            // gọi hàm kiểm tra xem thử có phải tất cả các phần tử đều lớn hơn 5 không?
+            console.log(checkEvery(arNum));
+            break;
+        case '6':
+            // gọi hàm kiểm tra xem thử có phần tử nào lớn hơn 5 không?
+            console.log(checkSome(arNum));
+            break;
+        case '7':
+            check = false;
+            break;
+    }
+} while (check);
