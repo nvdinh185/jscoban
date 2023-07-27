@@ -50,8 +50,8 @@ var students = [
 ];
 ```
 
-- Thêm các thuộc tính điểm Toán, điểm Lý, điểm Hóa để lưu thông tin điểm thi cho các sinh viên là các số ngẫu nhiên từ 0 đến 10
-- Hiển thị các sinh viên trong danh sách như sau: (Dùng forEach và map rồi so sánh 2 cách)
+- Thêm các thuộc tính điểm Toán, điểm Lý, điểm Hóa để lưu thông tin điểm thi cho các sinh viên là các số ngẫu nhiên từ 0 đến 10 (Dùng forEach và map rồi so sánh 2 cách)
+- Hiển thị các sinh viên trong danh sách như sau:
 
 ![](image.jpg)
 
