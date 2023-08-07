@@ -1,7 +1,7 @@
 // Hàm nhập mảng các số từ bàn phím
 function nhapMang(array, n) {
-    for (var i = 1; i <= n; i++) {
-        var el = prompt('Nhập phần tử thứ ' + i);
+    for (var i = 0; i < n; i++) {
+        var el = prompt(`Nhập array[${i}]: `);
         array.push(el);
     }
 }
@@ -14,5 +14,6 @@ function xuatMang(array) {
 }
 
 var arNum = [];
-nhapMang(arNum, 5);
+var n = prompt('Nhập số phần tử của mảng: ');
+nhapMang(arNum, n);
 xuatMang(arNum);
