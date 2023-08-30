@@ -85,11 +85,9 @@ function editStudent() {
     if (editIndex == -1) {
         alert("Không tìm thấy sinh viên muốn sửa!");
     } else {
-        // Lấy thông tin sinh viên muốn sửa
-        var editStudent = search(idEdit, students);
 
-        var nameEdit = prompt("Nhập tên sinh viên muốn sửa: ", editStudent.name);
-        var addressEdit = prompt("Nhập địa chỉ sinh viên muốn sửa: ", editStudent.address);
+        var nameEdit = prompt("Nhập tên sinh viên muốn sửa: ", students[editIndex].name);
+        var addressEdit = prompt("Nhập địa chỉ sinh viên muốn sửa: ", students[editIndex].address);
 
         var student = {
             id: idEdit,
@@ -121,13 +119,6 @@ function searchIndex(id, array) {
         if (array[i].id === id) return i;
     }
     return -1;
-}
-
-// Tìm sinh viên theo id
-function search(id, array) {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].id === id) return array[i];
-    }
 }
 
 // Hàm hiển thị danh sách sinh viên
