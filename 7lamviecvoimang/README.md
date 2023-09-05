@@ -28,20 +28,18 @@
 2. Xuất mảng
 3. In số nguyên tố
 4. In số hoàn hảo
-5. Đếm số 0
-6. Đếm số nguyên tố
-7. Đếm số hoàn hảo
-8. Thoát
+5. Đếm số nguyên tố
+6. Đếm số hoàn hảo
+7. Thoát
 ---------------------------------------
 
 - Khi chọn 1: Gọi hàm tạo mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99
 - Khi chọn 2: Gọi hàm xuất mảng
 - Khi chọn 3. In các số nguyên tố trong mảng
 - Khi chọn 4. In các số hoàn hảo trong mảng
-- Khi chọn 5. Đếm xem có bao nhiêu phần tử 0 trong mảng
-- Khi chọn 6. Đếm xem có bao nhiêu số nguyên tố trong mảng
-- Khi chọn 7. Đếm xem có bao nhiêu số hoàn hảo trong mảng
-- Khi chọn 8. Thoát khỏi chương trình
+- Khi chọn 5. Đếm xem có bao nhiêu số nguyên tố trong mảng
+- Khi chọn 6. Đếm xem có bao nhiêu số hoàn hảo trong mảng
+- Khi chọn 7. Thoát khỏi chương trình
 
 ## Bài 4: Chạy chương trình sau và ghi chép những gì đã học được
 ```js
