@@ -56,10 +56,10 @@ if (idx != -1) {
     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
 }
 
-// var idx = arrayNumber.indexOf(Number(input));
-// if (idx != -1) {
-//     console.log("Vị trí tìm thấy số " + input + " là: " + idx);
-// }
+var idx = arrayNumber.indexOf(Number(input));
+if (idx != -1) {
+    console.log("Vị trí tìm thấy số " + input + " là: " + idx);
+}
 
 bubbleSort(arrayNumber);// gọi hàm sắp xếp mảng theo thứ tự tăng dần
 console.log(arrayNumber);

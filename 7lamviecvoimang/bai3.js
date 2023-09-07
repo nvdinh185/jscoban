@@ -21,15 +21,6 @@ function soHoanHao(n) {
     return false;
 }
 
-// Hàm đếm số lầm xuất hiện một số trong mảng
-function count(number, array) {
-    var count = 0;
-    for (var i = 0; i < array.length; i++) {
-        if (array[i] == number) count++;
-    }
-    return count;
-}
-
 // Hàm đếm số nguyên tố trong mảng
 function countSNT(array) {
     var count = 0;
@@ -76,10 +67,9 @@ const menu = ` -- CHỌN CHỨC NĂNG --
 2. Xuất mảng
 3. In số nguyên tố
 4. In số hoàn hảo
-5. Đếm số 0
-6. Đếm số nguyên tố
-7. Đếm số hoàn hảo
-8. Thoát
+5. Đếm số nguyên tố
+6. Đếm số hoàn hảo
+7. Thoát
 
 Chọn thao tác thực hiện:
 `;
@@ -92,6 +82,7 @@ do {
             arrayNumber.push(getRandomInt(100));
         }
         bubbleSort(arrayNumber);
+        alert('Nhập mảng thành công!');
     } else if (input === '2') {
         console.log(arrayNumber);
     } else if (input === '3') {
@@ -107,10 +98,8 @@ do {
             }
         }
     } else if (input === '5') {
-        console.log(count(0, arrayNumber));
-    } else if (input === '6') {
         console.log(countSNT(arrayNumber));
-    } else if (input === '7') {
+    } else if (input === '6') {
         console.log(countSHH(arrayNumber));
     } else {
         break;
