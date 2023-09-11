@@ -1,6 +1,6 @@
 // Hàm nhập mảng các số từ bàn phím
 function nhapMang(array, n) {
-    for (var i = 1; i <= n; i++) {
+    for (var i = 0; i < n; i++) {
         var el = prompt('Nhập phần tử thứ ' + i);
         array.push(el);
     }
