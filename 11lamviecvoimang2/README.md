@@ -51,9 +51,9 @@ var students = [
 ```
 
 - Thêm các thuộc tính điểm Toán, điểm Lý, điểm Hóa để lưu thông tin điểm thi cho các sinh viên là các số ngẫu nhiên từ 0 đến 10
-+ Cách 1: Dùng forEach
-+ Cách 2: Dùng map
-+ so sánh forEach và map
+    + Cách 1: Dùng forEach
+    + Cách 2: Dùng map
+    + so sánh forEach và map
 - Hiển thị các sinh viên trong danh sách như sau:
 
 ![](image.jpg)
