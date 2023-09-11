@@ -3,105 +3,63 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-// Hàm kiểm tra số nguyên tố
-function soNguyenTo(n) {
-    for (var i = 2; i < n; i++) {
-        if (n % i == 0) return false;
+// Hàm tìm chỉ số của một số trong mảng
+function searchIndex(number, array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == number) return i;
     }
-    return true;
+    return -1;
 }
 
-// Hàm kiểm tra số hoàn hảo
-function soHoanHao(n) {
-    var sum = 0;
-    for (var i = 1; i < n; i++) {
-        if (n % i == 0) sum += i;
-    }
-    if (sum == n) return true;
-    return false;
-}
-
-// Hàm đếm số nguyên tố trong mảng
-function countSNT(array) {
-    var count = 0;
-    for (var i = 0; i < array.length; i++) {
-        if (soNguyenTo(array[i])) count++;
-    }
-    return count;
-}
-
-// Hàm đếm số hoàn hảo trong mảng
-function countSHH(array) {
-    var count = 0;
-    for (var i = 0; i < array.length; i++) {
-        if (soHoanHao(array[i])) count++;
-    }
-    return count;
-}
-
-// Hàm sắp xếp tăng dần
+// Hàm sắp xếp nổi bọt
 function bubbleSort(array) {
     var size = array.length;
-    var haveSwap;
+
     for (var i = 0; i < size - 1; i++) {
-        haveSwap = 0;
         for (var j = 0; j < size - i - 1; j++) {
+
             if (array[j] > array[j + 1]) {
+
                 var temp = array[j];
                 array[j] = array[j + 1];
                 array[j + 1] = temp;
-                haveSwap++;
             }
         }
-        // console.log('haveSwap ', haveSwap);
-        if (haveSwap === 0) {
-            break;
-        }
+    }
+}
+
+// Hàm tìm một số trong mảng
+function search(number, array) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == number) return array[i];
     }
 }
 
 var arrayNumber = [];
 
-const menu = ` -- CHỌN CHỨC NĂNG --
-1. Nhập mảng
-2. Xuất mảng
-3. In số nguyên tố
-4. In số hoàn hảo
-5. Đếm số nguyên tố
-6. Đếm số hoàn hảo
-7. Thoát
+// Lặp để tạo mảng gồm 10 số ngẫu nhiên từ 0 đến 9
+for (let i = 0; i < 10; i++) {
+    arrayNumber.push(getRandomInt(10));
+}
+console.log(arrayNumber);
 
-Chọn thao tác thực hiện:
-`;
+var input = prompt('Nhập số muốn tìm: ');
 
+if (search(input, arrayNumber)) {
+    console.log('Có tìm thấy số ' + input + ' trong mảng');
+} else {
+    console.log('Không tìm thấy!');
+}
 
-do {
-    var input = prompt(menu);
-    if (input === '1') {
-        for (var i = 0; i < 100; i++) {
-            arrayNumber.push(getRandomInt(100));
-        }
-        bubbleSort(arrayNumber);
-        alert('Nhập mảng thành công!');
-    } else if (input === '2') {
-        console.log(arrayNumber);
-    } else if (input === '3') {
-        for (var i = 0; i < arrayNumber.length; i++) {
-            if (soNguyenTo(arrayNumber[i])) {
-                console.log(arrayNumber[i]);
-            }
-        }
-    } else if (input === '4') {
-        for (var i = 0; i < arrayNumber.length; i++) {
-            if (soHoanHao(arrayNumber[i])) {
-                console.log(arrayNumber[i]);
-            }
-        }
-    } else if (input === '5') {
-        console.log(countSNT(arrayNumber));
-    } else if (input === '6') {
-        console.log(countSHH(arrayNumber));
-    } else {
-        break;
-    }
-} while (true);
+var idx = searchIndex(input, arrayNumber);
+if (idx != -1) {
+    console.log("Vị trí tìm thấy số " + input + " là: " + idx);
+}
+
+var idx = arrayNumber.indexOf(Number(input));
+if (idx != -1) {
+    console.log("Vị trí tìm thấy số " + input + " là: " + idx);
+}
+
+bubbleSort(arrayNumber);// gọi hàm sắp xếp mảng theo thứ tự tăng dần
+console.log(arrayNumber);

@@ -18,6 +18,7 @@ do {
             break;
         case '1':
             var eng = prompt("Nhập từ tiếng Anh: ");
+            // Kiểm tra xem từ này đã tồn tại trong từ điển chưa?
             var check = false;
             for (var el of arrWords) {
                 if (el.eng === eng) {

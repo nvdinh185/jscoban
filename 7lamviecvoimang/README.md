@@ -21,27 +21,7 @@
 - Khi chọn 6: Thoát khỏi chương trình
 
 
-## Bài 3: Tạo menu như sau:
----------------------------------------
--- CHỌN CHỨC NĂNG --
-1. Nhập mảng
-2. Xuất mảng
-3. In số nguyên tố
-4. In số hoàn hảo
-5. Đếm số nguyên tố
-6. Đếm số hoàn hảo
-7. Thoát
----------------------------------------
-
-- Khi chọn 1: Gọi hàm tạo mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99
-- Khi chọn 2: Gọi hàm xuất mảng
-- Khi chọn 3. In các số nguyên tố trong mảng
-- Khi chọn 4. In các số hoàn hảo trong mảng
-- Khi chọn 5. Đếm xem có bao nhiêu số nguyên tố trong mảng
-- Khi chọn 6. Đếm xem có bao nhiêu số hoàn hảo trong mảng
-- Khi chọn 7. Thoát khỏi chương trình
-
-## Bài 4: Chạy chương trình sau và ghi chép những gì đã học được
+## Bài 3: Chạy chương trình sau và ghi chép những gì đã học được
 ```js
 // Hàm tạo số ngẫu nhiên trong khoảng 0 đến max-1
 function getRandomInt(max) {
@@ -104,6 +84,26 @@ if (idx != -1) {
 bubbleSort(arrayNumber);// gọi hàm sắp xếp mảng theo thứ tự tăng dần
 console.log(arrayNumber);
 ```
+
+## Bài 4: Tạo menu như sau:
+---------------------------------------
+-- CHỌN CHỨC NĂNG --
+1. Nhập mảng
+2. Xuất mảng
+3. In số nguyên tố
+4. In số hoàn hảo
+5. Đếm số nguyên tố
+6. Đếm số hoàn hảo
+7. Thoát
+---------------------------------------
+
+- Khi chọn 1: Gọi hàm tạo mảng gồm 100 phần tử là các số ngẫu nhiên từ 0 -> 99 (tham khảo bài 3)
+- Khi chọn 2: Gọi hàm xuất mảng
+- Khi chọn 3. In các số nguyên tố trong mảng
+- Khi chọn 4. In các số hoàn hảo trong mảng
+- Khi chọn 5. Đếm xem có bao nhiêu số nguyên tố trong mảng
+- Khi chọn 6. Đếm xem có bao nhiêu số hoàn hảo trong mảng
+- Khi chọn 7. Thoát khỏi chương trình
 
 ## Bài 5: Cho 1 mảng 
 ```js
