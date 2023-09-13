@@ -38,4 +38,4 @@
 ## Bài 6: Viết chương trình (có sử dụng hàm) kiểm tra xem 1 số có phải là số hoàn hảo không?
 
 ## Bài 7: Viết chương trình có sử dụng hàm nhận vào 1 dãy số => in ra các số nguyên tố trong dãy đó
-![alt text](bai7.png)
+![](bai7.png)
