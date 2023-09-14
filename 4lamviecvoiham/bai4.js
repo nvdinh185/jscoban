@@ -1,10 +1,41 @@
+const menu = ` --  CHỌN CHỨC NĂNG --
+1. In dãy số đã nhập
+2. Tính tổng của dãy số
+3. Tìm số lớn nhất
+4. Tìm số nhỏ nhất
+5. Thoát
+`;
+var check = true;
+
+do {
+    var input = prompt(menu + " Chọn thao tác thực hiện:");
+
+    switch (input) {
+        case '1':
+            writeLog(1, 2, 3, 4, 5);
+            break;
+        case '2':
+            console.log(sumArray(1, 2, 3, 4, 5, 6));
+            break;
+        case '3':
+            console.log(findMax(1, 123, 500, 115, 44, 88));
+            break;
+        case '4':
+            console.log(findMin(100, 123, 500, 115, 44, 88));
+            break;
+        default:
+            console.log("Good Bye!");
+            check = false;
+            break;
+    }
+} while (check);
+
 // Hàm in dãy số đã nhập
 function writeLog() {
     for (var i = 0; i < arguments.length; i++) {
         console.log(arguments[i]);
     }
 }
-writeLog(1, 2, 3, 4, 5);
 
 // Hàm tính tổng của dãy số
 function sumArray() {
@@ -14,7 +45,6 @@ function sumArray() {
     }
     return sum;
 }
-console.log(sumArray(1, 2, 3, 4, 5, 6));
 
 // Hàm tìm số lớn nhất
 function findMax() {
@@ -26,7 +56,6 @@ function findMax() {
     }
     return max;
 }
-console.log(findMax(1, 123, 500, 115, 44, 88));
 
 // Hàm tìm số nhỏ nhất
 function findMin() {
@@ -38,5 +67,3 @@ function findMin() {
     }
     return min;
 }
-
-console.log(findMin(100, 123, 500, 115, 44, 88));
