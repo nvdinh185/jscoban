@@ -7,6 +7,6 @@
 
 ## Bài 2:
 - Khai báo 2 biến hoten và tuoi
-- Dùng hàm prompt() để nhập giá trị cho biến hoten
+- Dùng hàm prompt() để nhập giá trị cho biến hoTen
 - Dùng hàm prompt() để nhập giá trị cho biến tuoi
 - In các kết quả ra console
