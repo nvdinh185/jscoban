@@ -54,7 +54,7 @@ var students = [
     + Cách 1: Dùng forEach
     + Cách 2: Dùng map
     + so sánh forEach và map
-- Hiển thị các sinh viên trong danh sách như sau:
+- Hiển thị các sinh viên trong danh sách như sau: (dùng for of và for in)
 
 ![](image.jpg)
 
