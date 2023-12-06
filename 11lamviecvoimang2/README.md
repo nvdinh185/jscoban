@@ -118,8 +118,8 @@ Tạo menu như sau:
 === QUẢN LÝ SINH VIÊN ===
 1. kiểm tra xem có phải tất cả sinh viên đều có các môn trên điểm trung bình không?
 2. kiểm tra xem có sinh viên nào xếp loại giỏi không?
-3. Lọc ra các sinh viên xếp loại giỏi
-4. Tìm 1 sinh viên xếp loại giỏi
+3. Lọc ra các sinh viên xếp loại giỏi (lọc 1 mảng)
+4. Tìm 1 sinh viên xếp loại giỏi (tìm sinh viên giỏi đầu tiên)
 5. Cộng cho mỗi sinh viên 1 điểm toán
 6. Thêm thuộc tính tổng điểm 3 môn
 7. Tính tổng điểm của tất cả các sinh viên
