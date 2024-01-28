@@ -31,6 +31,17 @@
 3. JSX, Components, Props
 4. Create React App
 5. Hooks
+    - useState
+        + Two-way binding trong React
+        + Todolist with useState
+    - useEffect
+        + Mounted & Unmounted
+        + useEffect hook
+        + useEffect with dependencies
+        + useEffect with DOM events
+        + useEffect with timer functions
+        + useEffect with preview avatar
+        + useEffect with fake Chat App
 6. React Router Dom
 
 # CÁC BÀI TẬP THỰC HÀNH
