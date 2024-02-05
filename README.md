@@ -33,8 +33,16 @@
 5. Hooks
     - useState
         + useState hook
+            - couter
+            - update info
+            - random gift
         + Two-way binding trong React
-        + Todolist with useState
+            - 3 ví dụ
+            - todo list
+        + Hooks news
+        + Hình chữ nhật
+        + Sinh viên
+        + Thinking in react
     - useEffect
         + Mounted & Unmounted
         + useEffect hook
